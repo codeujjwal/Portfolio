@@ -1,0 +1,105 @@
+{
+  "main": {
+    "name": "Ujjwal Sharma",
+    "occupation": "ReactJS Developer && Web Devloper",
+    "description": "Full Stack React Developer by Day, Gamer by Night.",
+    "image": "mypic.jpg",
+    "bio": "My name is Ujjwal, I'm a Full Stack ReactJS Developer. Currently I'm Studying at IMS Engineering college, and have a grear intrest in IT industry ",
+    "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
+    "email": "mr.sharma.ujjwal@gmail.com",
+    "phone": "+91-9643 679978",
+    "address": {
+      "street": "B-131 , Street Number-9",
+      "city": "New-Delhi",
+      "state": "Delhi",
+      "zip": "110094"
+    },
+    "resumedownload": "CV-ujjwal sharma.pdf",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/ujjwal.sharma55",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ujjwal-sharma-04a8091ab/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/_.ujjwal_/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/ujjwalsh5",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
+      {
+        "school": "St. John's Academy",
+        "degree": "B.Tech in Computer Science and Engineering",
+        "graduated": "Not Yet completed",
+        "description": ""
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "50%"
+      },
+      {
+        "name": "CSS",
+        "level": "75%"
+      },
+      {
+        "name": "Git",
+        "level": "50%"
+      },
+      {
+        "name": "HTML5",
+        "level": "80%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "60%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "WhatsApp Clone",
+        "category": "WhatsApp Clone built with Reactjs and  Firebase",
+        "image": "WhatsAp.png",
+        "url": "https://whatsappweb-clone.netlify.app/"
+      },
+
+      {
+        "title": "Netflix Clone",
+        "category": "Netflix Clone built with ReactJS",
+        "image": "netflix-clone.jpeg",
+        "url": "https://netflix-clone-by-ujjwal.web.app/"
+      },
+      {
+        "title": "Covid-19 Records",
+        "category": "This website is  to keep a track of Covid-19 Records",
+        "image": "Covid19.png",
+        "url": "https://covid-19-records.netlify.app/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "That Ujjwal sharma must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be a fresher and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "vijednder Sharma(VAcreations)"
+      }
+    ]
+  }
+}
