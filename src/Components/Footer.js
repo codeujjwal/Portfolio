@@ -21,7 +21,7 @@ class Footer extends Component {
             <ul className="social-links">{networks}</ul>
 
             <ul>
-              <li>THANK YOU <span>♥️</span></li>
+              <li>THANK YOU</li>
             </ul>
 
             <ul className="copyright">
