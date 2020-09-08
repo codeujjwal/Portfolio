@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 
 const Contact = ({ data }) => {
-<<<<<<< HEAD
-  
-=======
->>>>>>> b337a906986d0dc4c39982c29bcc135da9a575d3
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");

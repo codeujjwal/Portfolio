@@ -9,7 +9,6 @@
     "email": "mr.sharma.ujjwal@gmail.com",
     "phone": "+91-9643 679978",
     "address": {
-      "street": "B-131 , Street Number-9",
       "city": "New-Delhi",
       "state": "Delhi",
       "zip": "110094"
@@ -43,8 +42,14 @@
     "education": [
       {
         "school": "St. John's Academy",
-        "degree": "B.Tech in Computer Science and Engineering",
-        "graduated": "Not Yet completed",
+        "degree": "High School",
+        "graduated": "",
+        "description": ""
+      },
+      {
+        "school": "IMS Engineering college",
+        "degree": "B.tech in Computer science",
+        "graduated": "",
         "description": ""
       }
     ],
@@ -84,7 +89,7 @@
         "title": "Netflix Clone",
         "category": "Netflix Clone built with ReactJS",
         "image": "netflix-clone.jpeg",
-        "url": "https://netflix-clone-by-ujjwal.web.app/"
+        "url": "https://whatsapp-mobileclone.netlify.app/"
       },
       {
         "title": "Covid-19 Records",
