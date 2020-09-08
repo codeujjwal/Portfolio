@@ -1,8 +1,8 @@
 {
   "main": {
     "name": "Ujjwal Sharma",
-    "occupation": "ReactJS Developer && Web Devloper",
-    "description": "Full Stack React Developer by Day, Gamer by Night.",
+    "occupation": "Full Stack Web Developer && Student",
+    "description": "Student by Day, Full Stack Web Developer by Night.",
     "image": "mypic.jpg",
     "bio": "My name is Ujjwal, I'm a Full Stack ReactJS Developer. Currently I'm Studying at IMS Engineering college, and have a grear intrest in IT industry ",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
@@ -55,23 +55,35 @@
     ],
     "skills": [
       {
-        "name": "ReactJs",
-        "level": "50%"
-      },
-      {
-        "name": "CSS",
-        "level": "75%"
-      },
-      {
-        "name": "Git",
-        "level": "50%"
-      },
-      {
         "name": "HTML5",
         "level": "80%"
       },
       {
+        "name": "CSS",
+        "level": "85%"
+      },
+      {
         "name": "JavaScript",
+        "level": "70%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "50%"
+      },
+      {
+        "name": "Git",
+        "level": "70%"
+      },
+      {
+        "name": "BootStrap",
+        "level": "80%"
+      },
+      {
+        "name": "jQuery",
+        "level": "60%"
+      },
+      {
+        "name": "C/C++/Python",
         "level": "60%"
       }
     ]
