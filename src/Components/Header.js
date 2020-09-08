@@ -67,7 +67,7 @@ class Header extends Component {
             <h1 className="responsive-headline">
               <Typewriter
                 options={{
-                  strings: ["Hello World !", `I'm ${name}`],
+                  strings: ["Hello World !!!! ", `I'm ${name}`],
                   autoStart: true,
                   loop: true,
                 }}
