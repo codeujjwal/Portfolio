@@ -108,6 +108,12 @@
         "category": "This website is  to keep a track of Covid-19 Records",
         "image": "Covid19.png",
         "url": "https://covid-19-records.netlify.app/"
+      },
+      {
+        "title": "Amazon clone",
+        "category": "This website is Clone of one the best E-commerce website",
+        "image": "amazon.png",
+        "url": "https://clone-amazon-5.netlify.app/"
       }
     ]
   },
