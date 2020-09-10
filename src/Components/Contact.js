@@ -112,8 +112,7 @@ const Contact = ({ data }) => {
             <p className="address">
               {data?.name}
               <br />
-              {data?.address.street} <br />
-              {data?.address.city}, {data?.address.state} {data?.address.zip}
+              {data?.address.city}, {data?.address.country}
               <br />
               <span>{data?.phone}</span>
             </p>

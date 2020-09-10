@@ -4,14 +4,13 @@
     "occupation": "Full Stack Web Developer && Student",
     "description": "Student by Day, Full Stack Web Developer by Night.",
     "image": "mypic.jpg",
-    "bio": "My name is Ujjwal, I'm a Full Stack web Developer. Currently I'm Studying at IMS Engineering college, and I am very enthusiastic about technology",
+    "bio": "My name is Ujjwal sharma, I'm an undergraduate in Computer Science Engineering. I am into Gaming, Bike Riding, Coding and i really like to lay my hands on new gadgets whenever i can. i have experience of about 3 months in web development during which i worked onn 5-6 projects. except my mains i also know a bit abt PHP, TypeScript. Available for Part Time Internship",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "mr.sharma.ujjwal@gmail.com",
     "phone": "+91-9643 679978",
     "address": {
-      "city": "New-Delhi",
-      "state": "Delhi",
-      "zip": "110094"
+      "city": "Delhi",
+      "country": "india"
     },
     "resumedownload": "CV-ujjwal sharma.pdf",
     "social": [
@@ -27,29 +26,29 @@
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/_.ujjwal_/",
+        "url": "https://www.instagram.com/codeujjwal/",
         "className": "fa fa-instagram"
       },
       {
         "name": "github",
-        "url": "http://github.com/ujjwalsh5",
+        "url": "http://github.com/codeujjwal",
         "className": "fa fa-github"
       }
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage": "My Level  of Understanding on each language",
     "education": [
       {
         "school": "St. John's Academy",
         "degree": "High School",
-        "graduated": "",
+        "graduated": "Non-Medical",
         "description": ""
       },
       {
         "school": "IMS Engineering college",
         "degree": "B.tech in Computer science",
-        "graduated": "",
+        "graduated": "OnGoing",
         "description": ""
       }
     ],
@@ -93,14 +92,14 @@
       {
         "title": "WhatsApp Clone",
         "category": "WhatsApp Clone built with Reactjs and  Firebase",
-        "image": "WhatsAp.png",
+        "image": "whatsapp.png",
         "url": "https://whatsappweb-clone.netlify.app/"
       },
 
       {
         "title": "Netflix Clone",
         "category": "Netflix Clone built with ReactJS",
-        "image": "netflix-clone.jpeg",
+        "image": "netflix.png",
         "url": "https://netflix-clone-by-ujjwal.web.app/"
       },
       {
@@ -120,8 +119,12 @@
   "testimonials": {
     "testimonials": [
       {
-        "text": "That Ujjwal sharma must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be a fresher and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "vijednder Sharma(VAcreations)"
+        "text": "Ujjwal sharma is a very reponsible and hard working towards his work, not only he did my work just the way i wanted he also did it in the given timeline",
+        "user": "vijednder Sharma (VAcreations)"
+      },
+      {
+        "text": "I hired him for building me a simple mere website and he took it seriouslyand i was very impressed with the result and his  level of understanding for his respective field is amazing",
+        "user": "Nandita ghosh (enterpeneur)"
       }
     ]
   }
