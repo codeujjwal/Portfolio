@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Ujjwal Sharma",
-    "occupation": "Full Stack Web Developer && Student",
-    "description": "Student by Day, Full Stack Web Developer by Night.",
+    "occupation": "React Developer && Student",
+    "description": "Student by Day, Developer by Night.",
     "image": "mypic.jpg",
-    "bio": "My name is Ujjwal sharma, I'm an undergraduate in Computer Science Engineering. I am into Gaming, Bike Riding, Coding and i really like to lay my hands on new gadgets whenever i can. i have experience of about 3 months in web development during which i worked onn 5-6 projects. except my mains i also know a bit abt PHP, TypeScript. Available for Part Time Internship",
+    "bio": "My name is Ujjwal sharma, I'm an undergraduate in Computer Science Engineering. I am into Gaming, Bike Riding, Coding and i really like to lay my hands on new gadgets whenever i can. i have experience of about 3 months in React development during which i worked onn 5-6 projects. except my mains i also know a bit abt PHP, TypeScript. Available for Part Time Internship",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "mr.sharma.ujjwal@gmail.com",
     "phone": "+91-9643 679978",
@@ -123,6 +123,12 @@
         "category": "This website used to place order for your coustomized order",
         "image": "burger.png",
         "url": "https://reactburgerbuild.netlify.app/"
+      },
+      {
+        "title": "Spotify Clone",
+        "category": "This App is Clone of Spotify",
+        "image": "1.jpg",
+        "url": "https://github.com/codeujjwal/Spotify-clone/"
       }
     ]
   },
