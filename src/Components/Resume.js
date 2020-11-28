@@ -74,12 +74,12 @@ class Resume extends Component {
               <ul className="skills">{skills}</ul>
             </div> */}
             <div className="skills_images">
-              <img src={hcj} className="hcj" />
+              <img src={hcj} className="hcj" alt=""/>
               <div>
-                <img src={react} className="react" />
+                <img src={react} className="react" alt=""/>
                 <h4 color="black">React/React-Native</h4>
               </div>
-              <img src={git} className="git" />
+              <img src={git} className="git" alt=""/>
             </div>
             <div className="skilldata">
               <p>
