@@ -47,8 +47,8 @@
   /* About Section
    ------------------------------------------------------------------- */
   #about .profile-pic {
-    width: 114px;
-    height: 114px;
+    width: 170px;
+    height: 170px;
     margin-left: 12px;
   }
   #about .contact-details {
@@ -116,10 +116,10 @@
   }
 
   #nav-wrap > a {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     text-align: left;
-    background-color: #cc5200;
+    background-color: #7510f7;
     position: relative;
     border: none;
     float: right;
@@ -161,7 +161,6 @@
     clear: both;
     width: auto;
     float: right;
-
     position: relative;
     top: 12px;
     right: 0;
@@ -171,9 +170,10 @@
   #nav-wrap:target > ul#nav {
     display: block;
     padding: 30px 20px 48px 20px;
-    background: #1f2024;
+    background: #7510f7;
     margin: 0 30px;
     clear: both;
+    width: 170px;
   }
 
   ul#nav li {
@@ -193,6 +193,10 @@
     margin: 12px 0;
     line-height: 16px; /* reset line-height from 48px */
     border: none;
+    color: white;
+  }
+  ul#nav li.current a {
+    color: black;
   }
 
   /* Header Styles
@@ -226,7 +230,7 @@
   /* About Section
    -------------------------------------------------------------------- */
   #about .profile-pic {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: -45px;
   }
   #about .download .button {
