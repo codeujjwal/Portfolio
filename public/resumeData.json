@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Ujjwal Sharma",
-    "occupation": "React Developer && Student",
+    "occupation": "Front-End Developer && Student",
     "description": "Student by Day, Developer by Night.",
     "image": "mypic.jpg",
-    "bio": "My name is Ujjwal sharma, I'm an undergraduate in Computer Science Engineering. I am into Gaming, Bike Riding, Coding and i really like to lay my hands on new gadgets whenever i can. i have experience of about 3 months in React development during which i worked onn 5-6 projects. except my mains i also know a bit abt PHP, TypeScript. Available for Part Time Internship",
+    "bio": "My name is Ujjwal sharma, I'm an undergraduate in Computer Science Engineering. I am into Gaming, Bike Riding, Coding and i really like to lay my hands on new gadgets whenever i can. i have experience of about 5 months in Front-End development using HTML5, CSS3, Javascript and my Favourite React during which i worked on more than 10 projects. I can make WebApps and Cross Platform Applications Using React Native.",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "mr.sharma.ujjwal@gmail.com",
     "phone": "+91-9643 679978",
@@ -12,7 +12,6 @@
       "city": "Delhi",
       "country": "india"
     },
-    "resumedownload": "CV-ujjwal sharma.pdf",
     "social": [
       {
         "name": "facebook",
@@ -26,7 +25,7 @@
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/codeujjwal/",
+        "url": "https://www.instagram.com/ujjwalxsharma/",
         "className": "fa fa-instagram"
       },
       {
@@ -37,7 +36,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "My Level  of Understanding on each language",
+    "skillmessage": "Skills in which i am good at",
     "education": [
       {
         "school": "St. John's Academy",
@@ -99,7 +98,6 @@
         "image": "whatsapp.png",
         "url": "https://whatsappp-clone.netlify.app/"
       },
-
       {
         "title": "Netflix Clone",
         "category": "Netflix Clone built with ReactJS",

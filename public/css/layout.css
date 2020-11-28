@@ -33,9 +33,13 @@ body {
 header {
   position: relative;
   width: 100%;
-  background: #161415 url(../images/header-background.jpg) no-repeat top center;
+  background: #fff url(../images/hero.png);
   text-align: center;
   overflow: hidden;
+  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 500px 200px;
 }
 
 /* vertically center banner section */
@@ -59,22 +63,18 @@ header .banner-text {
 }
 header .banner-text h1 {
   font: 90px/1.1em "opensans-bold", sans-serif;
-  color: #fff;
+  color: #7510f7;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 header .banner-text h3 {
   font: 18px/1.9em "librebaskerville-regular", serif;
-  color: #a8a8a8;
+  color: black;
   margin: 0 auto;
   width: 70%;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 header .banner-text h3 span,
-header .banner-text h3 a {
-  color: #fff;
-}
 header .banner-text hr {
   width: 60%;
   margin: 18px auto 24px auto;
@@ -87,7 +87,6 @@ header .social {
   margin: 24px 0;
   padding: 0;
   font-size: 30px;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
 }
 header .social li {
   display: inline-block;
@@ -95,7 +94,7 @@ header .social li {
   padding: 0;
 }
 header .social li a {
-  color: #fff;
+  color: #7510f7;
 }
 header .social li a:hover {
   color: #11abb0;
@@ -180,7 +179,7 @@ ul#nav li a {
   line-height: 32px;
   text-decoration: none;
   text-align: left;
-  color: #fff;
+  color: black;
 
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
@@ -201,7 +200,7 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: #2b2b2b;
+  background: #7510f7;
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
@@ -217,33 +216,33 @@ ul#nav li.current a {
 }
 
 #about h2 {
-  font: 22px/30px "opensans-bold", sans-serif;
-  color: #fff;
+  color: black;
   margin-bottom: 12px;
 }
 #about p {
   line-height: 30px;
-  color: #7a7a7a;
+  color: white;
 }
 #about .profile-pic {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 100%;
 }
 #about .contact-details {
   width: 41.66667%;
+  margin-top: 50px;
 }
 #about .download {
   width: 58.33333%;
-  padding-top: 6px;
+  padding-top: 30px;
 }
 #about .main-col {
   padding-right: 5%;
 }
 #about .download .button {
   margin-top: 6px;
-  background: #444;
+  background: black;
 }
 #about .download .button:hover {
   background: #fff;
@@ -260,8 +259,8 @@ ul#nav li.current a {
 
 #resume {
   background: #fff;
-  padding-top: 90px;
-  padding-bottom: 72px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   overflow: hidden;
 }
 
@@ -278,10 +277,12 @@ ul#nav li.current a {
   font: 18px/24px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #7510f7;
 }
 #resume h1 span {
-  border-bottom: 3px solid #11abb0;
+  border-bottom: 3px solid black;
   padding-bottom: 6px;
+  font-size: 30px;
 }
 #resume h3 {
   font: 25px/30px "opensans-bold", sans-serif;
@@ -290,14 +291,11 @@ ul#nav li.current a {
 #resume .header-col {
   padding-top: 9px;
 }
-#resume .main-col {
-  padding-right: 10%;
-}
 
 .education,
 .work {
-  margin-bottom: 48px;
-  padding-bottom: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
   border-bottom: 1px solid #e8e8e8;
 }
 #resume .info {
@@ -356,7 +354,7 @@ ul#nav li.current a {
   display: inline-block;
   height: 42px;
   line-height: 42px;
-  border-radius: 3px 0 0 3px;
+  border-radius: 3px 30px 30px 3px;
 }
 /*
 .git {
@@ -452,16 +450,17 @@ ul#nav li.current a {
 
 #portfolio {
   background: #ebeeee;
-  padding-top: 90px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-#portfolio h1 {
-  font: 15px/24px "opensans-semibold", sans-serif;
+#portfolio h2 {
+  /* font:  "opensans-semibold", sans-serif; */
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+  font-family: "opensans-semibold", sans-serif;
   margin-bottom: 48px;
-  color: #95a3a3;
+  /* color: #95a3a3; */
 }
 
 #portfolio-wrapper {
@@ -535,6 +534,7 @@ ul#nav li.current a {
 }
 .portfolio-item .item-wrap img {
   vertical-align: bottom;
+  border-radius: 10px;
 }
 .portfolio-item .portfolio-item-meta {
   padding: 18px;
@@ -1119,4 +1119,33 @@ footer .social-links li:first-child {
 }
 #go-top a:hover {
   background-color: #0f9095;
+}
+.skills_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.hcj {
+  width: 300px;
+  height: 120px;
+}
+.react {
+  height: 120px;
+}
+.reactdiv {
+  height: 120px;
+}
+.git {
+  width: 140px;
+  margin-left: 20px;
+  height: 120px;
+}
+.skilldata {
+  margin-top: 50px;
+  color: black;
+  font-weight: 700;
+  font-size: medium;
 }

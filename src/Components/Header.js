@@ -50,11 +50,6 @@ class Header extends Component {
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#testimonials">
-                Testimonials
-              </a>
-            </li>
-            <li>
               <a className="smoothscroll" href="#contact">
                 Contact
               </a>
@@ -72,7 +67,6 @@ class Header extends Component {
                   loop: true,
                 }}
               />
-              .
             </h1>
             <h3>
               <span>{occupation}</span>. <br /> {description}.
@@ -82,11 +76,11 @@ class Header extends Component {
           </div>
         </div>
 
-        <p className="scrolldown">
+        {/* <p className="scrolldown">
           <a className="smoothscroll" href="#about">
             <i className="icon-down-circle"></i>
           </a>
-        </p>
+        </p> */}
       </header>
     );
   }

@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import react from "./skills/1.png";
+import hcj from "./skills/2.png";
+import git from "./skills/3.png";
 
 class Resume extends Component {
   render() {
@@ -22,15 +25,15 @@ class Resume extends Component {
       //       <p>{work.description}</p>
       //   </div>
       // })
-      var skills = this.props.data.skills.map(function (skills) {
-        var className = "bar-expand " + skills.name.toLowerCase();
-        return (
-          <li key={skills.name}>
-            <span style={{ width: skills.level }} className={className}></span>
-            <em>{skills.name}</em>
-          </li>
-        );
-      });
+      // var skills = this.props.data.skills.map(function (skills) {
+      //   var className = "bar-expand " + skills.name.toLowerCase();
+      //   return (
+      //     <li key={skills.name}>
+      //       <span style={{ width: skills.level }} className={className}></span>
+      //       <em>{skills.name}</em>
+      //     </li>
+      //   );
+      // });
     }
 
     return (
@@ -68,10 +71,25 @@ class Resume extends Component {
           </div>
 
           <div className="nine columns main-col">
-            <p>{skillmessage}</p>
-
-            <div className="bars">
+            {/* <div className="bars">
               <ul className="skills">{skills}</ul>
+            </div> */}
+            <div className="skills_images">
+              <img src={hcj} className="hcj" />
+              <div>
+                <img src={react} className="react" />
+                <h4 color="black">React/React-Native</h4>
+              </div>
+              <img src={git} className="git" />
+            </div>
+            <div className="skilldata">
+              <p>
+                - Except my mains, I also About Bootstrap, JQuery, MaterialUI,
+                Expo and firebase as backend
+              </p>
+              <p>
+                <br />- I Also Know C, C++, Python
+              </p>
             </div>
           </div>
         </div>
