@@ -879,7 +879,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-  background: #191919;
+  background: #7510f7;
   padding-top: 96px;
   padding-bottom: 102px;
   color: #636363;
@@ -938,7 +938,7 @@ call-to-action .button {
 #contact label {
   font: 15px/24px "opensans-bold", sans-serif;
   margin: 12px 0;
-  color: #ebeeee;
+  color: black;
   display: inline-block;
   float: left;
   width: 26%;
@@ -947,8 +947,8 @@ call-to-action .button {
 #contact textarea,
 #contact select {
   padding: 18px 20px;
-  color: #eee;
-  background: #373233;
+  color: black;
+  background: white;
   margin-bottom: 42px;
   border: 0;
   outline: none;
@@ -1033,11 +1033,12 @@ call-to-action .button {
 
 footer {
   padding-top: 48px;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
   color: #303030;
   font-size: 14px;
   text-align: center;
   position: relative;
+  background-color: white;
 }
 
 footer a,

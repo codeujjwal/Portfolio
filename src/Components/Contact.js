@@ -18,7 +18,7 @@ const Contact = ({ data }) => {
       <div className="row section-head">
         <div className="two columns header-col">
           <h1>
-            <span>Get In Touch.</span>
+            <span>Get In Touch</span>
           </h1>
         </div>
 
@@ -105,21 +105,6 @@ const Contact = ({ data }) => {
             <br />
           </div>
         </div>
-
-        <aside className="four columns footer-widgets">
-          <div className="widget widget_contact">
-            <h4>Address and Phone</h4>
-            <p className="address">
-              {data?.name}
-              <br />
-              {data?.address.city}, {data?.address.country}
-              <br />
-              <span>{data?.phone}</span>
-            </p>
-          </div>
-
-          <div className="widget widget_tweets"></div>
-        </aside>
       </div>
     </section>
   );
