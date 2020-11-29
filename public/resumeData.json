@@ -94,37 +94,37 @@
     "projects": [
       {
         "title": "WhatsApp Clone",
-        "category": "WhatsApp Clone built with Reactjs and  Firebase",
+        "category": "This Chat WebApp is Built with Reactjs and  Firebase and have UI same as Whatsapp and can be used by using gmail ID.",
         "image": "whatsapp.png",
         "url": "https://whatsappp-clone.netlify.app/"
       },
       {
         "title": "Netflix Clone",
-        "category": "Netflix Clone built with ReactJS",
+        "category":"Tried cloning the UI of Netflix by fetching API of IMDB for posters , Made with Reactjs ",
         "image": "netflix.png",
         "url": "https://netflix-clone-by-ujjwal.web.app/"
       },
       {
-        "title": "Covid-19 Records",
-        "category": "This website is  to keep a track of Covid-19 Records",
+        "title": "Covid-19 Tracker",
+        "category": "This is a simple website made with React which tells you the number of COVID-19 cases and have graph of data.",
         "image": "Covid19.png",
         "url": "https://covid-19-records.netlify.app/"
       },
       {
         "title": "Amazon clone",
-        "category": "This website is Clone of one the best E-commerce website",
+        "category": "An E-commerce website with all functionalities such as login, add to cart, checkout made with React and Firebase ",
         "image": "amazon.png",
         "url": "https://clone-amazon-5.netlify.app/"
       },
       {
         "title": "Burger Builder",
-        "category": "This website used to place order for your coustomized order",
+        "category": "This webApp can be used to customize the burger you want to order and saves your previous orders.",
         "image": "burger.png",
         "url": "https://reactburgerbuild.netlify.app/"
       },
       {
         "title": "Spotify Clone",
-        "category": "This App is Clone of Spotify",
+        "category": "My first React-Native app. This is a clone of Spotify.",
         "image": "1.jpg",
         "url": "https://github.com/codeujjwal/Spotify-clone/"
       }
