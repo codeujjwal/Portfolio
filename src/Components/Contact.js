@@ -32,9 +32,7 @@ const Contact = ({ data }) => {
           <form id="contactForm" name="contactForm">
             <fieldset>
               <div>
-                <label htmlFor="contactName">
-                  Name <span className="required">*</span>
-                </label>
+                <label htmlFor="contactName">Name</label>
                 <input
                   value={name}
                   type="text"
@@ -47,9 +45,7 @@ const Contact = ({ data }) => {
               </div>
 
               <div>
-                <label htmlFor="contactEmail">
-                  Email <span className="required">*</span>
-                </label>
+                <label htmlFor="contactEmail">Email</label>
                 <input
                   value={email}
                   type="text"
@@ -75,14 +71,12 @@ const Contact = ({ data }) => {
               </div>
 
               <div>
-                <label htmlFor="contactMessage">
-                  Message <span className="required">*</span>
-                </label>
+                <label htmlFor="contactMessage">Message</label>
                 <textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   cols="50"
-                  rows="15"
+                  rows="5"
                   id="contactMessage"
                   name="contactMessage"
                 ></textarea>

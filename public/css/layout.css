@@ -876,7 +876,7 @@ call-to-action .button {
 
 #contact {
   background: #7510f7;
-  padding-top: 96px;
+  padding-top: 50px;
   padding-bottom: 102px;
   color: #636363;
 }
@@ -932,7 +932,7 @@ call-to-action .button {
   margin-bottom: 30px;
 }
 #contact label {
-  font: 15px/24px "opensans-bold", sans-serif;
+  font: 24px "opensans-bold", sans-serif;
   margin: 12px 0;
   color: black;
   display: inline-block;
@@ -947,10 +947,12 @@ call-to-action .button {
   background: white;
   margin-bottom: 42px;
   border: 0;
+  height: 50px;
   outline: none;
   font-size: 15px;
   line-height: 24px;
   width: 65%;
+  border-radius: 8px;
 }
 #contact input:focus,
 #contact textarea:focus,
@@ -1056,6 +1058,8 @@ footer .copyright li {
   margin: 0;
   padding: 0;
   line-height: 24px;
+  font-size: x-large;
+  color: #7510f7;
 }
 .ie footer .copyright li {
   display: inline;
