@@ -934,10 +934,10 @@ call-to-action .button {
 #contact label {
   font: 20px "opensans-bold", sans-serif;
   margin: 12px 0;
-  color: powderblue;
+  color: black;
   display: inline-block;
   float: left;
-  text-shadow: 0px 4px 4px black;
+  /* text-shadow: 0px 0.3px 1px white; */
   width: 26%;
 }
 #contact input,
