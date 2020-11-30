@@ -732,7 +732,7 @@ select {
   border: 0;
   outline: none;
   vertical-align: middle;
-  min-width: 225px;
+  min-width: 100px;
   max-width: 100%;
   font-size: 15px;
   line-height: 24px;
@@ -753,7 +753,7 @@ textarea:focus {
 }
 
 textarea {
-  min-height: 220px;
+  min-height: 100px;
 }
 
 label,
