@@ -74,21 +74,28 @@ class Resume extends Component {
               <ul className="skills">{skills}</ul>
             </div> */}
             <div className="skills_images">
-              <img src={hcj} className="hcj" alt=""/>
+              <img src={hcj} className="hcj" alt="" />
               <div>
-                <img src={react} className="react" alt=""/>
+                <img src={react} className="react" alt="" />
                 <h4 color="black">React/React-Native</h4>
               </div>
-              <img src={git} className="git" alt=""/>
+              <img src={git} className="git" alt="" />
             </div>
             <div className="skilldata">
-              <p>
-                - Except my mains, I also About Bootstrap, JQuery, MaterialUI,
-                Expo and firebase as backend
-              </p>
-              <p>
-                <br />- I Also Know C, C++, Python
-              </p>
+              <li>
+                I Know Redux and can work with class based as well functional
+                components in React.
+              </li>
+              <li>I can work with Firebase as Backend in React.</li>
+              <li>
+                I can work with any 3rd party library in React js as well as in
+                React Native.
+              </li>
+              <li>I Also have a knowledge of C, C++, Python.</li>
+              <li>
+                Except my mains, I also About Bootstrap, JQuery, MaterialUI,
+                Expo.
+              </li>
             </div>
           </div>
         </div>

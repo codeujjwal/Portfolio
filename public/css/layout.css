@@ -1152,3 +1152,7 @@ footer .social-links li:first-child {
   font-weight: 700;
   font-size: medium;
 }
+.skilldata > li {
+  margin-top: 10px;
+  line-height: 25px;
+}
