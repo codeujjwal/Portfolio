@@ -51,7 +51,6 @@ header:before {
 }
 header .banner {
   display: inline-block;
-  vertical-align: middle;
   margin: 0 auto;
   width: 85%;
   padding-bottom: 30px;
@@ -84,7 +83,7 @@ header .banner-text hr {
 
 /* header social links */
 header .social {
-  margin: 24px 0;
+  margin: 20px 0;
   padding: 0;
   font-size: 30px;
 }
@@ -94,7 +93,7 @@ header .social li {
   padding: 0;
 }
 header .social li a {
-  color: #7510f7;
+  color: #f06000;
 }
 header .social li a:hover {
   color: #11abb0;
@@ -473,7 +472,7 @@ ul#nav li.current a {
   margin-bottom: 36px;
 }
 .portfolio-item .item-wrap {
-  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   border-radius: 16px;

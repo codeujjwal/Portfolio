@@ -5,6 +5,7 @@ class Header extends Component {
     if (this.props.data) {
       var name = this.props.data.name;
       var occupation = this.props.data.occupation;
+      var description = this.props.data.description;
       var networks = this.props.data.social.map(function (network) {
         return (
           <li key={network.name}>
@@ -39,17 +40,12 @@ class Header extends Component {
             </li>
             <li>
               <a className="smoothscroll" href="#resume">
-                Resume
+                Skills
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#contact">
-                Contact
+                Projects
               </a>
             </li>
           </ul>
@@ -58,10 +54,10 @@ class Header extends Component {
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">{name}</h1>
-            <h3>
+            <h2>
               <span>{occupation}</span>
-            </h3>
-            <hr />
+            </h2>
+            <br />
             <ul className="social">{networks}</ul>
           </div>
         </div>
