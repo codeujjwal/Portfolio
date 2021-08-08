@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import react from "./skills/1.png";
-import hcj from "./skills/2.png";
-import git from "./skills/3.png";
-
 class Resume extends Component {
   render() {
     if (this.props.data) {
@@ -15,21 +11,24 @@ class Resume extends Component {
               <em className="date">{education.graduated}</em>
             </p>
             <p>{education.description}</p>
+            <br />
           </div>
         );
       });
-      // var work = this.props.data.work.map(function(work){
-      //   return <div key={work.company}><h3>{work.company}</h3>
-      //       <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
-      //       <p>{work.description}</p>
-      //   </div>
-      // })
+      var work = this.props.data.work.map(function (work) {
+        return (
+          <div key={work.company}>
+            <h3>{work.company}</h3>
+            <h6>{work.title}</h6>
+            <p>{work.description}</p>
+            <br />
+          </div>
+        );
+      });
       // var skills = this.props.data.skills.map(function (skills) {
-      //   var className = "bar-expand " + skills.name.toLowerCase();
       //   return (
-      //     <li key={skills.name}>
-      //       <span style={{ width: skills.level }} className={className}></span>
-      //       <em>{skills.name}</em>
+      //     <li className="skill" key={skills.name}>
+      //       {skills.name}
       //     </li>
       //   );
       // });
@@ -51,16 +50,15 @@ class Resume extends Component {
           </div>
         </div>
 
-        {/* <div className="row work">
+        <div className="row work">
+          <div className="three columns header-col">
+            <h1>
+              <span>Experience</span>
+            </h1>
+          </div>
 
-         <div className="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div className="nine columns main-col">
-          {work}
+          <div className="nine columns main-col">{work}</div>
         </div>
-    </div> */}
 
         <div className="row skill">
           <div className="three columns header-col">
@@ -70,32 +68,23 @@ class Resume extends Component {
           </div>
 
           <div className="nine columns main-col">
-            {/* <div className="bars">
-              <ul className="skills">{skills}</ul>
-            </div> */}
-            <div className="skills_images">
-              <img src={hcj} className="hcj" alt="" />
-              <div>
-                <img src={react} className="react" alt="" />
-                <h4 color="black">React/React-Native</h4>
-              </div>
-              <img src={git} className="git" alt="" />
-            </div>
+            {/* <ul className="skills">{skills}</ul> */}
             <div className="skilldata">
               <li>
-                I Know Redux and can work with class based as well functional
-                components in React.
+                I Have a good knowledge of React with Redux, Hooks and much
+                more.
               </li>
-              <li>I can work with Firebase as Backend in React.</li>
               <li>
-                I can work with any 3rd party library in React js as well as in
-                React Native.
+                I can work with class based as well functional components in
+                React.
               </li>
-              <li>I Also have a knowledge of C, C++, Python.</li>
+              <li>I can work on apps using Expo and Ionic as well</li>
               <li>
-                Except my mains, I also About Bootstrap, JQuery, MaterialUI,
-                Expo.
+                I can create API's using NodeJs, ExpressJs and MongoDB and can
+                use them in React.
               </li>
+              <li>I can work with any 3rd party library in Javascript</li>
+              <li>I Also have basic knowledge of C, C++, Python.</li>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Ujjwal Sharma",
-    "occupation": "Front-End Developer && Student",
-    "description": "Student by Day, Developer by Night.",
+    "occupation": "Full Stack Developer",
+    "description": "MERN stack",
     "image": "mypic.jpg",
-    "bio": "My name is Ujjwal sharma, I am pursuing B.Tech in Computer Science. I am into Coding and i really like to lay my hands on new gadgets whenever i can. i have experience of more than 9 months in Front-End development using Html, Css, Javascript and my Favourite React during which i worked on more than 10 projects. I can make WebApps and Cross Platform Applications Using React Native.",
+    "bio": "My name is Ujjwal sharma, I am pursuing B.Tech in Computer Science Engineering(CSE). Its been more than a year studying Development in which i have been using Html, Css, Javascript and my Favourite React and i worked on more than 10 projects you can check some of them below. I can make WebApps and Cross Platform Applications Using React Native and also Full stack applications using MERN stack.",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "mr.sharma.ujjwal@gmail.com",
     "phone": "+91-9643 679978",
@@ -51,42 +51,37 @@
         "description": ""
       }
     ],
+    "work":[
+      {"company": "YLURN","title":"React Native Developer","description":"Created the pixel perfect UI for there App(YLURN) using react native"},
+      {"company": "REDPOSITIVE","title":"React Native Developer","description":"Worked on multiple projects as per them and created projects from scratch"}
+    ],
     "skills": [
       {
-        "name": "HTML5",
-        "level": "80%"
+        "name": "HTML5"
       },
       {
-        "name": "CSS",
-        "level": "85%"
+        "name": "CSS"
       },
       {
-        "name": "JavaScript",
-        "level": "70%"
+        "name": "JavaScript"
       },
       {
-        "name": "React JS",
-        "level": "80%"
+        "name": "React JS"
       },
       {
-        "name": "React Native",
-        "level": "50%"
+        "name": "React Native"
       },
       {
-        "name": "Git",
-        "level": "80%"
+        "name": "Git"
       },
       {
-        "name": "BootStrap",
-        "level": "70%"
+        "name": "NodeJS"
       },
       {
-        "name": "jQuery",
-        "level": "70%"
+        "name": "jQuery"
       },
       {
-        "name": "C/C++/Python",
-        "level": "60%"
+        "name": "C/C++/Python"
       }
     ]
   },
@@ -123,10 +118,10 @@
         "url": "https://reactburgerbuild.netlify.app/"
       },
       {
-        "title": "Spotify Clone",
-        "category": "My first React-Native app. This is a clone of Spotify's UI.",
-        "image": "1.jpg",
-        "url": "https://github.com/codeujjwal/Spotify-clone/"
+        "title": "DevConnector",
+        "category": "its a MERN stack app. In this you can create a profile with skills, education and experience and much more",
+        "image": "dev.png",
+        "url": "https://obscure-mesa-03362.herokuapp.com/"
       }
     ]
   }
