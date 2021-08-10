@@ -60,7 +60,7 @@ class Resume extends Component {
           <div className="nine columns main-col">{work}</div>
         </div>
 
-        <div className="row skill">
+        {/* <div className="row skill">
           <div className="three columns header-col">
             <h1>
               <span>Skills</span>
@@ -68,26 +68,16 @@ class Resume extends Component {
           </div>
 
           <div className="nine columns main-col">
-            {/* <ul className="skills">{skills}</ul> */}
+            <ul className="skills">{skills}</ul>
             <div className="skilldata">
-              <li>
-                I Have a good knowledge of React with Redux, Hooks and much
-                more.
-              </li>
-              <li>
-                I can work with class based as well functional components in
-                React.
-              </li>
-              <li>I can work on apps using Expo and Ionic as well</li>
-              <li>
-                I can create API's using NodeJs, ExpressJs and MongoDB and can
-                use them in React.
-              </li>
-              <li>I can work with any 3rd party library in Javascript</li>
-              <li>I Also have basic knowledge of C, C++, Python.</li>
+              <li>React js</li>
+              <li>React Native</li>
+              <li>Nodejs</li>
+              <li>MOngoDB</li>
+              <li>GIt</li>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     );
   }
