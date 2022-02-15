@@ -36,7 +36,6 @@
     ]
   },
   "resume": {
-    "skillmessage": "Skills in which i am good at",
     "education": [
       {
         "school": "St. John's Academy",
@@ -52,16 +51,12 @@
       }
     ],
     "work":[
-      {"company": "YLURN","title":"React Native Developer","description":"Created the pixel perfect UI for there App(YLURN) using react native"},
-      {"company": "REDPOSITIVE","title":"React Native Developer","description":"Worked on multiple projects as per them and created projects from scratch"}
+      {"company": "MIND OPTIMIZERS","title":"HEAD","description":"Created the club to help other students grow ther skills by multiple events and exercises and also help beginners with there projects and guide them to get great oppurtunities"},
+      {"company": "ANDWEMET","title":"React Native Developer","description":"Created the pixel perfect UI for there App(ANDWEMET) using react native with the team"},
+      {"company": "REDPOSITIVE","title":"React Native Developer","description":"Worked on multiple projects as per them and created projects from scratch"},
+      {"company": "YLURN","title":"React Native Developer","description":"Created the pixel perfect UI for there App(YLURN) using react native"}
     ],
     "skills": [
-      {
-        "name": "HTML5"
-      },
-      {
-        "name": "CSS"
-      },
       {
         "name": "JavaScript"
       },
@@ -76,12 +71,6 @@
       },
       {
         "name": "NodeJS"
-      },
-      {
-        "name": "jQuery"
-      },
-      {
-        "name": "C/C++/Python"
       }
     ]
   },
@@ -91,13 +80,13 @@
         "title": "WhatsApp Clone",
         "category": "This Chat WebApp is Built with Reactjs and  Firebase and have UI same as Whatsapp and can be used by using gmail ID.",
         "image": "whatsapp.png",
-        "url": "https://whatsappp-clone.netlify.app/"
+        "url": "https://suspicious-blackwell-2f18c4.netlify.app/"
       },
       {
         "title": "Netflix Clone",
         "category":"Tried cloning the UI of Netflix by fetching API of IMDB for posters , Made with Reactjs ",
         "image": "netflix.png",
-        "url": "https://netflix-clone-by-ujjwal.web.app/"
+        "url": "https://620bd07840d4730008312566--eager-swanson-489b6f.netlify.app/"
       },
       {
         "title": "Covid-19 Tracker",
@@ -109,13 +98,13 @@
         "title": "Amazon clone",
         "category": "An E-commerce website with all functionalities such as login, add to cart, checkout made with React and Firebase ",
         "image": "amazon.png",
-        "url": "https://clone-amazon-5.netlify.app/"
+        "url": "https://kind-johnson-b1874b.netlify.app/"
       },
       {
         "title": "Burger Builder",
         "category": "This webApp can be used to customize the burger you want to order and saves your previous orders.",
         "image": "burger.png",
-        "url": "https://reactburgerbuild.netlify.app/"
+        "url": "https://happy-hugle-ab949b.netlify.app/"
       },
       {
         "title": "DevConnector",
