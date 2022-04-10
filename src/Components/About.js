@@ -14,7 +14,12 @@ class About extends Component {
     }
 
     return (
-      <section id="about">
+      <section
+        id="about"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div className="row">
           <div className="three columns">
             <img className="profile-pic" src={profilepic} alt="profile pic" />

@@ -12,7 +12,7 @@
   /* header styles
    ------------------------------------------------------------------ */
   header .banner-text h1 {
-    font: 80px/1.1em "opensans-bold", sans-serif;
+    font: 80px/1.1em "cursive", sans-serif;
     letter-spacing: -1px;
     margin: 0 auto 12px auto;
   }
@@ -21,18 +21,21 @@
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
+  #about {
+    width: 95%;
+  }
   /* header styles
    ------------------------------------------------------------------ */
   header .banner {
     padding-bottom: 12px;
+    margin-top: 150px;
   }
   header .banner-text h1 {
-    font: 78px/1.1em "opensans-bold", sans-serif;
+    font: 60px "cursive", sans-serif;
     letter-spacing: -1px;
   }
-  header .banner-text h3 {
-    font: 17px/1.9em "librebaskerville-regular", serif;
-    width: 80%;
+  header .banner-text h2 {
+    font: 17px/3em "opensans-bold", serif;
   }
   header .banner-text hr {
     width: 65%;
@@ -105,7 +108,7 @@
 @media only screen and (max-width: 767px) {
   /* mobile navigation
    -------------------------------------------------------------------- */
-  #nav-wrap {
+  /* #nav-wrap {
     font: 12px "opensans-bold", sans-serif;
     background: transparent !important;
     letter-spacing: 1.5px;
@@ -113,7 +116,7 @@
     position: fixed;
     top: 0;
     right: 0;
-  }
+  } */
 
   #nav-wrap > a {
     width: 60px;
@@ -155,68 +158,18 @@
     right: 0;
   }
 
-  /* hide menu panel */
-  #nav-wrap ul#nav {
-    height: auto;
-    display: none;
-    clear: both;
-    width: auto;
-    float: right;
-    position: relative;
-    top: 0;
-    right: 0;
-    height: 100vh;
-  }
-
-  /* display menu panels */
-  #nav-wrap:target > ul#nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 20px 48px 20px;
-    background: #7510f7;
-    clear: both;
-    width: 100%;
-  }
-
-  ul#nav li {
-    display: flex;
-    height: 10%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 4%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  ul#nav li a {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    font-size: x-large;
-    margin: 12px 0;
-    line-height: 16px; /* reset line-height from 48px */
-    border: none;
-    color: white;
-  }
-  ul#nav li.current a {
-    color: black;
-  }
-
   /* Header Styles
    -------------------------------------------------------------------- */
   header .banner {
     padding-bottom: 12px;
     padding-top: 6px;
+    margin-top: 100px;
   }
   header .banner-text h1 {
-    font: 68px/1.1em "opensans-bold", sans-serif;
+    font: 68px/1.4em "cursive", sans-serif;
   }
-  header .banner-text h3 {
-    font: 16px/1.9em "librebaskerville-regular", serif;
-    width: 85%;
+  header .banner-text h2 {
+    font: 16px/3em "opensans-bold", serif;
   }
   header .banner-text hr {
     width: 80%;
@@ -226,7 +179,7 @@
   /* header social links */
   header .social {
     margin: 18px 0 24px 0;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 36px;
   }
   header .social li {
@@ -261,7 +214,7 @@
   #resume .main-col {
     padding-right: 30px;
   }
-  #resume h3,
+
   #resume .info {
     text-align: center;
   }
@@ -429,12 +382,11 @@
     padding-top: 24px;
   }
   header .banner-text h1 {
-    font: 40px/1.1em "opensans-bold", sans-serif;
+    font: 40px/2em "cursive", sans-serif;
     margin: 0 auto 24px auto;
   }
-  header .banner-text h3 {
-    font: 14px/1.9em "librebaskerville-regular", sans-serif;
-    width: 90%;
+  header .banner-text h2 {
+    font: 14px/1.9em "opensans-bold", serif;
   }
 
   /* header social links */

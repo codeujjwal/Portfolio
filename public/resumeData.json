@@ -1,6 +1,6 @@
 {
   "main": {
-    "name": "Ujjwal Sharma",
+    "name": "Ujjwal",
     "occupation": "Full Stack Developer",
     "description": "MERN stack",
     "image": "mypic.jpg",
@@ -51,10 +51,11 @@
       }
     ],
     "work":[
+      {"company": "FREELANCER","description":"Working as a freelancer side by side with clients. Building there products Apps/websApps using MERN stack anbd deliverig them the full fledged product from scratch."},
       {"company": "MIND OPTIMIZERS","title":"HEAD","description":"Created the club to help other students grow ther skills by multiple events and exercises and also help beginners with there projects and guide them to get great oppurtunities"},
-      {"company": "ANDWEMET","title":"React Native Developer","description":"Created the pixel perfect UI for there App(ANDWEMET) using react native with the team"},
-      {"company": "REDPOSITIVE","title":"React Native Developer","description":"Worked on multiple projects as per them and created projects from scratch"},
-      {"company": "YLURN","title":"React Native Developer","description":"Created the pixel perfect UI for there App(YLURN) using react native"}
+      {"company": "ANDWEMET","title":"React Native Developer","description":"Created the pixel perfect UI for there App(ANDWEMET) using react native with the team and integrated the API's uding by creating functions and adding features to it by using them and tested the app"},
+      {"company": "REDPOSITIVE","title":"React Native Developer","description":"Worked on multiple projects as per them and created projects from scratch and delivered on time to the clients"},
+      {"company": "YLURN","title":"React Native Developer","description":"Created the Native components for mobile UI for there App(YLURN) using EXPO which was already createrd in react JS amd then converted them to react native components and integrated backend and did testing"}
     ],
     "skills": [
       {
