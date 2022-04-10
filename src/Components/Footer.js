@@ -16,10 +16,16 @@ class Footer extends Component {
 
     return (
       <footer>
-        <div className="row">
-          <div className="twelve columns">
-            <ul className="social-links">{networks}</ul>
-
+        <div
+          className="row"
+          style={{
+            borderTop: "1px solid grey",
+            paddingTop: "40px",
+            marginTop: "20px",
+          }}
+        >
+          <div className="twelve columns " style={{ textAlign: "center" }}>
+            <ul className="social-links2">{networks}</ul>
             <ul>
               <li>THANK YOU</li>
             </ul>
@@ -27,11 +33,6 @@ class Footer extends Component {
             <ul className="copyright">
               <li>UJJWAL SHARMA</li>
             </ul>
-          </div>
-          <div id="go-top">
-            <a className="smoothscroll" title="Back to Top" href="#home">
-              <i className="icon-up-open"></i>
-            </a>
           </div>
         </div>
       </footer>

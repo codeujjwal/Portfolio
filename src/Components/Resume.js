@@ -4,7 +4,12 @@ class Resume extends Component {
     if (this.props.data) {
       var education = this.props.data.education.map(function (education) {
         return (
-          <div key={education.school}>
+          <div
+            key={education.school}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <h3>{education.school}</h3>
             <p className="info">
               {education.degree} <span>&bull;</span>
@@ -17,7 +22,12 @@ class Resume extends Component {
       });
       var work = this.props.data.work.map(function (work) {
         return (
-          <div key={work.company}>
+          <div
+            key={work.company}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <h3>{work.company}</h3>
             <h6>{work.title}</h6>
             <p>{work.description}</p>
@@ -37,7 +47,12 @@ class Resume extends Component {
     return (
       <section id="resume">
         <div className="row education">
-          <div className="three columns header-col">
+          <div
+            className="three columns header-col"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <h1>
               <span>Education</span>
             </h1>
@@ -51,7 +66,12 @@ class Resume extends Component {
         </div>
 
         <div className="row work">
-          <div className="three columns header-col">
+          <div
+            className="three columns header-col"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <h1>
               <span>Experience</span>
             </h1>

@@ -1,10 +1,14 @@
 import React, { Component } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 class Header extends Component {
+  componentDidUpdate() {
+    AOS.init();
+  }
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
-      var occupation = this.props.data.occupation;
       var networks = this.props.data.social.map(function (network) {
         return (
           <li key={network.name}>
@@ -15,17 +19,9 @@ class Header extends Component {
         );
       });
     }
-
     return (
       <header id="home">
         <nav id="nav-wrap">
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-            Show navigation
-          </a>
-          <a className="mobile-btn" href="#home" title="Hide navigation">
-            Hide navigation
-          </a>
-
           <ul id="nav" className="nav">
             <li className="current">
               <a className="smoothscroll" href="#home">
@@ -51,10 +47,17 @@ class Header extends Component {
         </nav>
 
         <div className="row banner">
-          <div className="banner-text">
-            <h1 className="responsive-headline">{name}</h1>
+          <div
+            className="banner-text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <h1>
+              Hi, My name is <span>{name}</span>
+            </h1>
             <h2>
-              <span>{occupation}</span>
+              I am a <span>Student</span> & a <span>Full stack developer</span>
             </h2>
             <br />
             <ul className="social">{networks}</ul>

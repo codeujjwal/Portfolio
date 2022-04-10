@@ -258,6 +258,7 @@ h1 {
   line-height: 42px;
   margin-bottom: 12px;
   letter-spacing: -1px;
+  margin-bottom: 20px;
 }
 h2 {
   font-size: 28px;
@@ -1035,6 +1036,9 @@ properly.
 /* mobile wide/smaller tablets
 --------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
+  #about p {
+    text-align: center;
+  }
   .row {
     width: 460px;
     margin: 0 auto;
@@ -1047,6 +1051,10 @@ properly.
     margin-left: 0;
     margin-right: 0;
     padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
   .row .row {
     width: auto;
@@ -1168,4 +1176,36 @@ properly.
 .skill {
   color: black;
   font-weight: 900;
+}
+.portfolio-item-card {
+  width: 400px;
+  height: 550px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgb(128 128 128 / 50%);
+  padding: 20px;
+  margin: 20px;
+}
+.columnmm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.item-wrap img {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.portfolio-item-meta p {
+  color: grey;
+}
+.portfolio-item-meta h5 {
+  color: #7510f7;
+  border-top: 1px solid black;
+}
+.social-links2 {
+  display: flex;
+  width: 200px;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-around;
 }
