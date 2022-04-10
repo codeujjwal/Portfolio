@@ -14,12 +14,13 @@ class Portfolio extends Component {
             data-aos-easing="ease-in-out"
           >
             <div className="item-wrap">
-              <a href={projects.url} title={projects.title}></a>
-              <img alt={projects.title} src={projectImage} />
-              <div className="portfolio-item-meta">
-                <h5>{projects.title}</h5>
-                <p>{projects.category}</p>
-              </div>
+              <a href={projects.url} title={projects.title}>
+                <img alt={projects.title} src={projectImage} />
+                <div className="portfolio-item-meta">
+                  <h5>{projects.title}</h5>
+                  <p>{projects.category}</p>
+                </div>
+              </a>
             </div>
           </div>
         );
