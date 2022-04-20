@@ -70,7 +70,6 @@ sub,
 sup,
 var,
 b,
-i,
 dl,
 dt,
 dd,
@@ -113,6 +112,7 @@ video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  font-family: "Josefin Sans", sans-serif !important;
 }
 
 article,
