@@ -26,7 +26,24 @@ class About extends Component {
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
-            <p>{bio}</p>
+            <p>
+              A talented individual who always seeks for new opportunities and
+              accept challanges for self development. A full stack developer
+              mainly focusing and working on frontend developement with an
+              emphasis JavaScript, React.
+            </p>
+            <p>
+              An engineering student pursuing B.Tech in Computer Science
+              Engineering(CSE) from IMS engineering college and is part of many
+              communities with his own club as Mind Optimizers and has served as
+              a mentor and speaker at various workshops.
+            </p>
+            <p>
+              Previously worked as a React native developer at 3 diffrent
+              startups and as a freelance web developer as well and having an
+              experience of more than 1 year. Worked on more than 10 projects
+              during my journey. lets connect !!
+            </p>
             <div className="row">
               <div className="columns contact-details">
                 <h2>Contact Details</h2>
