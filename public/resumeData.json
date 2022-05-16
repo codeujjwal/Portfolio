@@ -1,12 +1,12 @@
 {
   "main": {
-    "name": "Ujjwal",
+    "name": "Ujjwal sharma",
     "occupation": "Full Stack Developer",
     "description": "MERN stack",
     "image": "mypic.jpg",
     "bio": "I am 3rd year student pursuing B.Tech in Computer Science Engineering(CSE). Working on JavaScript (MERN stack). Constructed multiple successful projects. Always ready for new challenges and work on them. For further details about my projects check the below given. I can make Webapps and mobile Applications Using MERN Stack.",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
-    "email": "mr.sharma.ujjwal@gmail.com",
+    "email": "ujjwxls@gmail.com",
     "phone": "+91-9643 679978",
     "address": {
       "city": "Delhi",
@@ -40,13 +40,19 @@
       {
         "school": "St. John's Academy",
         "degree": "High School",
-        "graduated": "PCM with CS",
+        "graduated": "secured 8.4 CGPA",
+        "description": ""
+      },
+      {
+        "school": "St. John's Academy",
+        "degree": "Higher secondary School",
+        "graduated": "secured 71% in PCM with CS",
         "description": ""
       },
       {
         "school": "IMS Engineering college",
-        "degree": "B.tech in Computer science",
-        "graduated": "OnGoing",
+        "degree": "B.tech (CSE)",
+        "graduated": "Pursuing",
         "description": ""
       }
     ],
