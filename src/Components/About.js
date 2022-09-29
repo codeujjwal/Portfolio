@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import resume from "./resume.pdf";
+import React, { Component } from 'react';
+import resume from './resume.pdf';
 
 class About extends Component {
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
-      var profilepic = "images/" + this.props.data.image;
-      var bio = this.props.data.bio;
+      var profilepic = 'images/' + this.props.data.image;
       var city = this.props.data.address.city;
       var country = this.props.data.address.country;
       var phone = this.props.data.phone;
