@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 class Resume extends Component {
   render() {
     if (this.props.data) {
@@ -29,8 +29,8 @@ class Resume extends Component {
             data-aos-easing="ease-in-out"
           >
             <h3>{work.company}</h3>
-            <h6>{work.title}</h6>
-            <p>{work.description}</p>
+            <h5 style={{ textDecorationLine: 'underline' }}>{work.title}</h5>
+            <p style={{ color: 'grey' }}>{work.description}</p>
             <br />
           </div>
         );
