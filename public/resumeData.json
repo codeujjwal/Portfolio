@@ -4,7 +4,7 @@
     "occupation": "Full Stack Developer",
     "description": "MERN stack",
     "image": "mypic.jpg",
-    "bio": "I am 3rd year student pursuing B.Tech in Computer Science Engineering(CSE). Working on JavaScript (MERN stack). Constructed multiple successful projects. Always ready for new challenges and work on them. For further details about my projects check the below given. I can make Webapps and mobile Applications Using MERN Stack.",
+    "bio": "An Engineering student pursuing B.tech and a Front-End Developer having a experience of working on multiple projects using React-JS and React-Native both from scratch. Constructed multiple successful projects during my journey. A mentor and speaker , guiding many students with there career. Always open for new oppurtunities and challanges.",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "ujjwxls@gmail.com",
     "phone": "+91-9643 679978",
@@ -57,6 +57,11 @@
       }
     ],
     "work": [
+      {
+        "company": "Ruptok Fintech",
+        "title": "React Developer",
+        "description": "Created Admin Panel from scratch individually for there P2p Mobile  application using react for handling and viewing the data of customers. Making WEB-APP with team same as mobile application for customers to but sell and bid on products and manage there activities and which is scalable. Working with team and integrating backend using postman"
+      },
       {
         "company": "SQUAREWARE",
         "title": "React Native Developer",
