@@ -25,7 +25,9 @@ class Resume extends Component {
               display: this.state.selectedCompany === index ? "block" : "none",
             }}
           >
+            <span className="title">{work.title}</span>
             <p className="description">{work.description}</p>
+            <span className="duration">Worked here for {work.duration}</span>
           </div>
         );
       });

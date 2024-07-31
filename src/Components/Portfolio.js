@@ -14,10 +14,19 @@ class Portfolio extends Component {
             data-aos-easing="ease-in-out"
           >
             <div className="item-wrap">
-              <a href={projects.url} title={projects.title}>
+              <a
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                }}
+                href={projects.url}
+                title={projects.title}
+                target="_blank"
+              >
                 <img alt={projects.title} src={projectImage} />
                 <div className="portfolio-item-meta">
-                  <h5>{projects.title}</h5>
                   <p>{projects.category}</p>
                 </div>
               </a>
@@ -29,23 +38,38 @@ class Portfolio extends Component {
 
     return (
       <section id="portfolio">
-        <div className="row">
-          <div className="twelve columns collapsed">
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-            >
-              Some of My Projects
-            </h1>
-
-            <div
-              id="portfolio-wrapper"
-              className="bgrid-quarters s-bgrid-thirds cf columnmm"
-            >
-              {projects}
-            </div>
+        <div className="portfolio">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            Some projects i have worked or working on
+          </h1>
+          <div
+            id="portfolio-wrapper"
+            className="bgrid-quarters s-bgrid-thirds cf columnmm"
+          >
+            {projects}
           </div>
+        </div>
+        <div
+          style={{
+            width: "100vw",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <button
+            className="more-projects"
+            onClick={() => {
+              const link = "https://github.com/codeujjwal";
+              window.open(link, "_blank");
+            }}
+          >
+            View more projects
+          </button>
         </div>
       </section>
     );

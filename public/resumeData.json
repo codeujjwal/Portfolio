@@ -58,33 +58,45 @@
     ],
     "work": [
       {
+        "company": "GetMentor",
+        "title": "Founder",
+        "duration": "A Year",
+        "description": "GetMentor.live offers personalized mentorship for tech careers, including Frontend and Full-Stack programs. Gain expert guidance, build live projects, and receive support until you secure your dream job."
+      },
+      {
         "company": "Fracto",
         "title": "Senior Software Engineer",
+        "duration": "Few Months",
         "description": "Creating a SAAS application for accouting services, where you can manage all invoices and expenses via company and manage cash flow through it"
       },
       {
         "company": "Ruptok Fintech",
-        "title": "React Developer",
-        "description": "Created Admin Panel from scratch individually for there P2p Mobile  application using react for handling and viewing the data of customers. Making WEB-APP with team same as mobile application for customers to but sell and bid on products and manage there activities and which is scalable. Working with team and integrating backend using postman"
+        "title": "FrontEnd Developer",
+        "duration": "A Year and Half",
+        "description": "I developed an admin panel from scratch using React for a P2P mobile app, and collaborated on a scalable web app for customers to buy, sell, bid, and manage activities."
       },
       {
         "company": "SQUAREWARE",
         "title": "React Native Developer",
+        "duration": "Few Months",
         "description": "Worked on project 'GETYOUPRO' for helping sportspersons to upload there videos to get feedback or review from other pro players on that platform to improve themselves built the app from scratch using RN cli for android & IOS both"
       },
       {
         "company": "ANDWEMET",
-        "title": "React Native Developer",
+        "title": "Full Stack Developer",
+        "duration": "Few Months",
         "description": "Created the pixel perfect UI for there App(ANDWEMET) using react native with the team and integrated the API's uding by creating functions and adding features to it by using them and tested the app"
       },
       {
         "company": "REDPOSITIVE",
         "title": "React Native Developer",
+        "duration": "Half Year",
         "description": "Worked on multiple projects as per them and created projects from scratch and delivered on time to the clients"
       },
       {
         "company": "YLURN",
         "title": "React Native Developer",
+        "duration": "Few Months",
         "description": "Created the Native components for mobile UI for there App(YLURN) using EXPO which was already createrd in react JS amd then converted them to react native components and integrated backend and did testing"
       }
     ],
@@ -112,40 +124,40 @@
   "portfolio": {
     "projects": [
       {
-        "title": "WhatsApp Clone",
-        "category": "This Chat WebApp is Built with Reactjs and  Firebase and have UI same as Whatsapp and can be used by using gmail ID.",
-        "image": "whatsapp.png",
-        "url": "https://suspicious-blackwell-2f18c4.netlify.app/"
+        "category": "At GetMentor.live, we offer personalized mentorship programs to help tech professionals thrive. Choose from Frontend or Full-Stack Ninja Mentorship to gain expert guidance, build live projects, and achieve your career goals. Our programs provide continuous support until you secure your dream job, bridging the gap between aspirations and success.",
+        "image": "getMentor.png",
+        "url": "https://www.getmentor.live/",
+        "status": 0
       },
       {
-        "title": "Netflix Clone",
-        "category": "Tried cloning the UI of Netflix by fetching API of IMDB for posters , Made with Reactjs ",
-        "image": "netflix.png",
-        "url": "https://620bd07840d4730008312566--eager-swanson-489b6f.netlify.app/"
+        "category": "I built the Fracto, an AI-driven platform for financial management. It features business banking, automated revenue recognition, smart contracts, and escrow management. The site showcases testimonials, various pricing plans, and support, inviting users to start a 15-day trial and connect via contact details",
+        "image": "fracto.png",
+        "url": "https:/fracto.tech/",
+        "status": 1
       },
       {
-        "title": "Covid-19 Tracker",
-        "category": "This is a simple website made with React which tells you the number of COVID-19 cases and have graph of data.",
-        "image": "Covid19.png",
-        "url": "https://covid-19-records.netlify.app/"
+        "category": "I'm developing FractoPay, a mobile app for managing payouts with UPI, NEFT, and IMPS. It ensures transactions stay within assigned limits, providing a streamlined and secure payout experience.",
+        "image": "fractoPay.png",
+        "url": "https:/fracto.tech/",
+        "status": 0
       },
       {
-        "title": "Amazon clone",
-        "category": "An E-commerce website with all functionalities such as login, add to cart, checkout made with React and Firebase ",
-        "image": "amazon.png",
-        "url": "https://kind-johnson-b1874b.netlify.app/"
+        "category": "I worked as a frontend developer for Ruptok, a company offering gold loans and facilitating gold transactions through its web and mobile e-commerce platform. My role involved enhancing the user experience for buying, selling, and managing gold loans online.",
+        "image": "ruptok.png",
+        "url": "https://ruptok.com",
+        "status": 1
       },
       {
-        "title": "Burger Builder",
-        "category": "This webApp can be used to customize the burger you want to order and saves your previous orders.",
-        "image": "burger.png",
-        "url": "https://happy-hugle-ab949b.netlify.app/"
+        "category": "I worked at Ylurn, developing the web and mobile frontend for a platform that supports online teaching, course sales, live classes, and test portals. The platform also features digital content libraries and student management tools, providing a comprehensive solution for growing and managing online education businesses.",
+        "image": "ylurn.png",
+        "url": "https://ylurn.com",
+        "status": 0
       },
       {
-        "title": "DevConnector",
-        "category": "its a MERN stack app. In this you can create a profile with skills, education and experience and much more",
-        "image": "dev.png",
-        "url": "https://obscure-mesa-03362.herokuapp.com/"
+        "category": "I developed the website for AAAS Industries, showcasing their engineering solutions like Special Purpose Machines, welding fixtures, proto parts, CMM services, and press tools. The site includes details on facilities, services, customer testimonials, and contact information, enhancing their online presence and customer engagement.",
+        "image": "aaas.png",
+        "url": "https://aaasind.com/",
+        "status": 1
       }
     ]
   }

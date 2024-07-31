@@ -280,7 +280,7 @@ ul#nav li.current a {
 #resume {
   background-color: #fff;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px !important;
   padding: 20px;
   overflow: hidden;
   width: 80%; 
@@ -489,11 +489,14 @@ box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
   background: #ebeeee;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
 }
 #portfolio h1 {
   margin-bottom: 48px;
   text-align: center;
   letter-spacing: 1px;
+  font-size: 30px;
 }
 #portfolio h5 {
   text-transform: uppercase;

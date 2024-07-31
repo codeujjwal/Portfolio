@@ -41,10 +41,19 @@
   .name {
     font-size: 50px !important;
   }
+  .title {
+  font-size: 28px;
+  line-height: 40px;
+}
+.duration {
+  font-size: 14px;
+  line-height: 30px;
+}
   .description {
   font-size: 20px;
   line-height: 30px;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
   header .banner-text h2 {
     font: 30px "opensans-bold", serif;
@@ -149,6 +158,20 @@
     top: 0;
     right: 0;
   } */
+
+  #resume{
+    width: '90%' !important;
+  }
+
+  .portfolio{
+    width: 90%;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  #portfolio h1 {
+
+  font-size: 20px;
+}
 
   #nav-wrap > a {
     width: 60px;
