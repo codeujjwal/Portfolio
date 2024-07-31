@@ -158,6 +158,10 @@
     top: 0;
     right: 0;
   } */
+   
+  header{
+    background-size: 300px 120px;
+  }
 
   #resume{
     width: '90%' !important;
