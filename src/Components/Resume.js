@@ -1,103 +1,82 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+
 class Resume extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedCompany: 0, // Initialize with the first company selected by default
+    };
+  }
+
+  handleCompanyClick = (index) => {
+    this.setState({ selectedCompany: index });
+  };
+
   render() {
     if (this.props.data) {
-      var education = this.props.data.education.map(function (education) {
-        return (
-          <div
-            key={education.school}
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <h3>{education.school}</h3>
-            <p className="info">
-              {education.degree} <span>&bull;</span>
-              <em className="date">{education.graduated}</em>
-            </p>
-            <p>{education.description}</p>
-            <br />
-          </div>
-        );
-      });
-      var work = this.props.data.work.map(function (work) {
+      var workDescriptions = this.props.data.work.map((work, index) => {
         return (
           <div
             key={work.company}
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
+            style={{
+              display: this.state.selectedCompany === index ? "block" : "none",
+            }}
           >
-            <h3>{work.company}</h3>
-            <h5 style={{ textDecorationLine: 'underline' }}>{work.title}</h5>
-            <p style={{ color: 'grey' }}>{work.description}</p>
-            <br />
+            <p className="description">{work.description}</p>
           </div>
         );
       });
-      // var skills = this.props.data.skills.map(function (skills) {
-      //   return (
-      //     <li className="skill" key={skills.name}>
-      //       {skills.name}
-      //     </li>
-      //   );
-      // });
+
+      var companyNames = this.props.data.work.map((work, index) => {
+        return (
+          <h1
+            key={work.company}
+            onClick={() => this.handleCompanyClick(index)}
+            style={{ cursor: "pointer" }}
+          >
+            <span
+              style={{
+                backgroundColor:
+                  index === this.state.selectedCompany ? "#7510f738" : "#fff",
+                paddingTop: "20px",
+                paddingLeft: "20px",
+                paddingRight: "20px",
+              }}
+            >
+              {work.company}
+            </span>
+          </h1>
+        );
+      });
     }
 
     return (
       <section id="resume">
-        <div className="row education">
-          <div
-            className="three columns header-col"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <h1>
-              <span>Education</span>
-            </h1>
-          </div>
-
-          <div className="nine columns main-col">
-            <div className="row item">
-              <div className="twelve columns">{education}</div>
-            </div>
-          </div>
-        </div>
-
+        <h2>Experience</h2>
         <div className="row work">
           <div
-            className="three columns header-col"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <h1>
-              <span>Experience</span>
-            </h1>
-          </div>
-
-          <div className="nine columns main-col">{work}</div>
-        </div>
-
-        {/* <div className="row skill">
-          <div className="three columns header-col">
-            <h1>
-              <span>Skills</span>
-            </h1>
-          </div>
-
-          <div className="nine columns main-col">
-            <ul className="skills">{skills}</ul>
-            <div className="skilldata">
-              <li>React js</li>
-              <li>React Native</li>
-              <li>Nodejs</li>
-              <li>MOngoDB</li>
-              <li>GIt</li>
+            <div className="resume-row">
+              <div style={{ flex: 1 }}>{companyNames}</div>
+              <div
+                style={{
+                  flex: 1,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                {workDescriptions}
+              </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </section>
     );
   }

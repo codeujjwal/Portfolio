@@ -347,7 +347,10 @@ blockquote cite a:visited {
   color: #8b9798;
   border: none;
 }
-
+.experience {
+  background-color: #fff;
+  border: 2px solid red;
+}
 /* ---------------------------------------------------------------------
 /*  Pull Quotes Markup
 /*
@@ -361,6 +364,15 @@ blockquote cite a:visited {
 .pull-quote {
   position: relative;
   padding: 18px 30px 18px 0px;
+}
+.resume-row {
+  display: flex;
+  flex-direction: row;
+}
+.description {
+  color: black;
+  font-size: 30px;
+  line-height: 50px;
 }
 .pull-quote:before,
 .pull-quote:after {
@@ -807,7 +819,22 @@ input[type="checkbox"] {
 .row:after {
   clear: both;
 }
-
+.say-hello {
+  background-color: #fff;
+  border-radius: 50px;
+  color: #7510f7;
+  border: 2px solid #7510f7;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  font-size: 20px;
+}
+.say-hello:hover {
+  background-color: #7510f7;
+  color: #fff;
+}
 .column,
 .columns {
   position: relative;

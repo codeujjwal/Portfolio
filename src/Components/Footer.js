@@ -31,7 +31,7 @@ class Footer extends Component {
             </ul>
 
             <ul className="copyright">
-              <li>UJJWAL SHARMA</li>
+              Created with ❤️️ BY<li>UJJWAL SHARMA</li>
             </ul>
           </div>
         </div>
