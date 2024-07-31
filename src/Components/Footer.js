@@ -31,7 +31,11 @@ class Footer extends Component {
             </ul>
 
             <ul className="copyright">
-              Created with ❤️️ BY<li>UJJWAL SHARMA</li>
+              Created with{" "}
+              <span role="img" aria-label="heart">
+                ❤️️
+              </span>
+              BY<li>UJJWAL SHARMA</li>
             </ul>
           </div>
         </div>

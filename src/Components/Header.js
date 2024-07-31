@@ -8,7 +8,6 @@ class Header extends Component {
   }
   render() {
     if (this.props.data) {
-      var name = this.props.data.name;
       var networks = this.props.data.social.map(function (network) {
         return (
           <li key={network.name}>
