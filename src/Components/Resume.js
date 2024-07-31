@@ -23,6 +23,7 @@ class Resume extends Component {
             data-aos-easing="ease-in-out"
             style={{
               display: this.state.selectedCompany === index ? "block" : "none",
+              marginTop: "30px",
             }}
           >
             <span className="title">{work.title}</span>
