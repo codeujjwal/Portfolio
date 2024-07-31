@@ -20,6 +20,7 @@ class About extends Component {
             }}
           >
             <img
+              alt="my pic"
               src="images/mypic.jpg"
               height="200px"
               width="200px"
