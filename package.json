@@ -9,10 +9,11 @@
     "react-dom": "^16.13.1",
     "react-ga": "^3.1.2",
     "react-scripts": "3.4.3",
+    "react-transition-group": "^4.4.5",
     "typewriter-effect": "^2.13.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

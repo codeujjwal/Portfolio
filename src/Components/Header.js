@@ -21,30 +21,23 @@ class Header extends Component {
     }
     return (
       <header id="home">
-        <nav id="nav-wrap">
-          <ul id="nav" className="nav">
-            <li className="current">
-              <a className="smoothscroll" href="#home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#about">
-                About
-              </a>
-            </li>
-            {/* <li>
-              <a className="smoothscroll" href="#resume">
-                Skills
-              </a>
-            </li> */}
-            <li>
-              <a className="smoothscroll" href="#portfolio">
-                Projects
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <img className="logo-pic" src="images/Code.png" alt="logo" />
+        <button
+          className="say-hello"
+          onClick={() => {
+            const email = "hello@codeujjwal.in";
+            const subject = "Hello Mail";
+            const body = "Hey Ujjwal Sharma,";
+
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+              subject
+            )}&body=${encodeURIComponent(body)}`;
+
+            window.open(mailtoLink, "_blank");
+          }}
+        >
+          Say Hello
+        </button>
         <div className="row banner">
           <div
             className="banner-text"
@@ -52,11 +45,11 @@ class Header extends Component {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <h1>
-              Hi, My name is <span>{name}</span>
-            </h1>
+            <h1>Frontend Developer, Mentor, Speaker & Student</h1>
             <h2>
-              I am a <span>Student</span> & a <span>Full stack developer</span>
+              <span>
+                I code beautifully simple things, and I love what I do.
+              </span>
             </h2>
             <br />
             <ul className="social">{networks}</ul>

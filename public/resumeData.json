@@ -58,6 +58,11 @@
     ],
     "work": [
       {
+        "company": "Fracto",
+        "title": "Senior Software Engineer",
+        "description": "Creating a SAAS application for accouting services, where you can manage all invoices and expenses via company and manage cash flow through it"
+      },
+      {
         "company": "Ruptok Fintech",
         "title": "React Developer",
         "description": "Created Admin Panel from scratch individually for there P2p Mobile  application using react for handling and viewing the data of customers. Making WEB-APP with team same as mobile application for customers to but sell and bid on products and manage there activities and which is scalable. Working with team and integrating backend using postman"
@@ -66,16 +71,6 @@
         "company": "SQUAREWARE",
         "title": "React Native Developer",
         "description": "Worked on project 'GETYOUPRO' for helping sportspersons to upload there videos to get feedback or review from other pro players on that platform to improve themselves built the app from scratch using RN cli for android & IOS both"
-      },
-      {
-        "company": "FREELANCER",
-        "title": "Full stack web Developer",
-        "description": "Working as a freelancer with clients. Built there products Apps/websApps using MERN stack anbd deliverig them the full fledged product from scratch."
-      },
-      {
-        "company": "Coding Club Society",
-        "title": "President",
-        "description": "Created the club to help other students grow ther skills by multiple events and exercises and also help beginners with there projects and guide them to get great oppurtunities"
       },
       {
         "company": "ANDWEMET",

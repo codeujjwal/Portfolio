@@ -1,63 +1,46 @@
-import React, { Component } from 'react';
-import resume from './resume.pdf';
+import React, { Component } from "react";
 
 class About extends Component {
   render() {
     if (this.props.data) {
-      var name = this.props.data.name;
-      var profilepic = 'images/' + this.props.data.image;
-      var city = this.props.data.address.city;
-      var country = this.props.data.address.country;
-      var phone = this.props.data.phone;
-      var email = this.props.data.email;
+      var profilepic = "images/" + this.props.data.image;
     }
 
     return (
-      <section
-        id="about"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
-        <div className="row">
-          <div className="three columns">
-            <img className="profile-pic" src={profilepic} alt="profile pic" />
-          </div>
-          <div className="nine columns main-col">
-            <h2>About Me</h2>
+      <>
+        <section
+          id="about"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div className="row">
+            <h2>Hi, I am Ujjwal Sharma</h2>
             <p>
-              A Btech student and a Front-End Developer having experience of
-              working on multiple projects using React-JS and React-Native both
-              from scratch. Constructed multiple successful projects during my
-              journey. A mentor and a speaker- guiding many students with there
-              career. Always open for new opportunities and challenges.
+              A Front-End Developer based in Delhi, India, with over 3 years of
+              experience in web and mobile application development. As a mentor
+              and speaker, I share my expertise in React JS, React Native, HTML,
+              CSS, JavaScript, Vite, Firebase, Redux, and Tailwind. I have built
+              scalable, pixel-perfect UIs, led front-end teams, and ensured
+              seamless product releases. My projects include a jewelry
+              marketplace with an admin panel, a matrimonial platform, and an
+              LMS for online teaching. My GitHub features over 20 personal
+              projects.
             </p>
-            <div className="row">
-              <div className="columns contact-details">
-                <h2>Contact Details</h2>
-                <p className="address">
-                  <span>{name}</span>
-                  <br />
-                  <span>
-                    {city}, {country}
-                  </span>
-                  <br />
-                  <span>{phone}</span>
-                  <br />
-                  <span>{email}</span>
-                </p>
-              </div>
-              <div className="columns download">
-                <p>
-                  <a href={resume} download className="button">
-                    <i className="fa fa-download"></i>Download Resume
-                  </a>
-                </p>
-              </div>
-            </div>
+            <p style={{ marginTop: "20px" }}>
+              I hold a Bachelor of Technology (Btech) in Computer Science
+              Engineering and am pursuing a Master of Science (MS) in Computer
+              Science with a specialization in cloud computing. I have completed
+              certifications like "React - The Complete Guide" and "Javascript
+              Advanced - Zero to Hero," showcasing my commitment to continuous
+              learning. Known for maintaining clean code, delivering
+              high-quality products on time, and creating engaging user
+              interfaces, I welcome opportunities, collaborations, and
+              discussions on front-end development.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
+      </>
     );
   }
 }

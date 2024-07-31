@@ -8,6 +8,11 @@
 
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
+@media only screen and (max-width: 1400px) {
+  header .banner-text h1 {
+    font-size: 40px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   /* header styles
    ------------------------------------------------------------------ */
@@ -16,14 +21,14 @@
     letter-spacing: -1px;
     margin: 0 auto 12px auto;
   }
+  header .banner-text h1 {
+    font-size: 40px;
+  }
 }
 
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
-  #about {
-    width: 95%;
-  }
   /* header styles
    ------------------------------------------------------------------ */
   header .banner {
@@ -31,11 +36,19 @@
     margin-top: 150px;
   }
   header .banner-text h1 {
-    font: 60px "cursive", sans-serif;
-    letter-spacing: -1px;
+    font-size: 35px;
   }
+  .name {
+    font-size: 50px !important;
+  }
+  .description {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 50px;
+}
   header .banner-text h2 {
-    font: 17px/3em "opensans-bold", serif;
+    font: 30px "opensans-bold", serif;
+    line-height: 30px;
   }
   header .banner-text hr {
     width: 65%;
@@ -53,6 +66,25 @@
     width: 170px;
     height: 170px;
     margin-left: 12px;
+  }
+  .logo-pic {
+    width: 100px;
+    height: 100px;
+    top: 5px;
+    left: 5px;
+  }
+  .resume-row {
+  display: flex;
+  flex-direction: column;
+}
+  .say-hello {
+    font-size: 14px;
+    top: 30px;
+    right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   #about .contact-details {
     width: 50%;
@@ -166,10 +198,13 @@
     margin-top: 100px;
   }
   header .banner-text h1 {
-    font: 68px/1.4em "cursive", sans-serif;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 40px;
   }
   header .banner-text h2 {
-    font: 16px/3em "opensans-bold", serif;
+    font: 20px "opensans-bold", serif;
+    line-height: 30px;
   }
   header .banner-text hr {
     width: 80%;
@@ -201,6 +236,22 @@
     padding-right: 30px;
   }
 
+  #about h2 {
+  color: white;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#about p {
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
   /* Resume Section
    --------------------------------------------------------------------- */
   #resume .header-col {
@@ -211,6 +262,9 @@
   #resume h1 {
     letter-spacing: 3px;
   }
+  #resume h1 span {
+  font-size: 20px;
+}
   #resume .main-col {
     padding-right: 30px;
   }
@@ -382,11 +436,10 @@
     padding-top: 24px;
   }
   header .banner-text h1 {
-    font: 40px/2em "cursive", sans-serif;
-    margin: 0 auto 24px auto;
-  }
+   line-height: 50px;
   header .banner-text h2 {
-    font: 14px/1.9em "opensans-bold", serif;
+    font: 20px "opensans-bold", serif;
+    line-height: 30px;
   }
 
   /* header social links */
