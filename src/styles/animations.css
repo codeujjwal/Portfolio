@@ -1,0 +1,147 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 1s ease-out forwards;
+}
+
+/* Float Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  0% {
+    content: "</>";
+  }
+  25% {
+    content: "{...}";
+  }
+  50% {
+    content: "[ ]";
+  }
+  75% {
+    content: "( )";
+  }
+  100% {
+    content: "</>";
+  }
+}
+
+.typing-text::after {
+  content: "</>";
+  animation: typing 4s infinite;
+}
+
+/* Glow Effect */
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(96, 165, 250, 0.3);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+/* Cursor Glow Effect */
+.glow-cursor {
+  pointer-events: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(129, 140, 251, 1) 0%,
+    rgba(20, 20, 20, 1) 60%,
+    transparent 100%
+  );
+
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: screen;
+  transition: width 0.2s, height 0.2s;
+}
+
+/* Hover effect for interactive elements */
+a:hover ~ .glow-cursor,
+button:hover ~ .glow-cursor {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(
+    circle at center,
+    rgba(129, 140, 251, 0.3) 0%,
+    rgba(20, 20, 20, 0.8) 60%,
+    transparent 100%
+  );
+}
+
+/* Sections with initial opacity for fade-in effect */
+section {
+  opacity: 0;
+}
+
+/* Animation Delays */
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animation-delay-800 {
+  animation-delay: 800ms;
+}
+
+/* Global cursor style */
+* {
+  cursor: none;
+}
+
+/* Ensure regular cursor on text inputs */
+input,
+textarea,
+select,
+[contenteditable="true"] {
+  cursor: text;
+}
