@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="font-sans bg-gray-900">
-      <GlowCursor />
+      {window.innerWidth > 800 && <GlowCursor />}
       <Header />
       <main>
         <HeroSection />
