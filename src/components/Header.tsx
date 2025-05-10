@@ -73,7 +73,7 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div
         className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-md transition-transform duration-300 transform ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+          isMenuOpen ? "translate-y-0" : "-translate-y-[500px]"
         }`}
       >
         <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
