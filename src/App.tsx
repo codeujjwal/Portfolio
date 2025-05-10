@@ -12,7 +12,7 @@ import "./styles/animations.css";
 
 function App() {
   useEffect(() => {
-    document.title = "Ujjwal Sharma | Senior Front-End Engineer";
+    document.title = "Ujjwal Sharma | Software Developer";
 
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
