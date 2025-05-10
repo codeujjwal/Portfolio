@@ -1,4 +1,5 @@
-import { Briefcase } from "lucide-react";
+import { Briefcase, ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
 
 const experiences = [
   {
@@ -41,6 +42,7 @@ const experiences = [
 ];
 
 const ExperienceSection = () => {
+  const [showBulletPoints, setShowBulletPoints] = useState("");
   return (
     <section id="experience" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
@@ -70,9 +72,7 @@ const ExperienceSection = () => {
                   index % 2 === 0 ? "md:pr-8" : "md:pl-8"
                 }`}
               >
-                <div
-                  className={`relative ${index % 2 !== 0 && "md:text-right"}`}
-                >
+                <div className={`relative`}>
                   <div
                     className="hidden md:block absolute top-0 w-4 h-4 rounded-full bg-blue-400 shadow-glow"
                     style={{
@@ -83,31 +83,51 @@ const ExperienceSection = () => {
                   ></div>
 
                   <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:shadow-glow hover:border-blue-400/50">
-                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-blue-400/20 text-blue-400 mb-3">
-                      <Briefcase size={20} />
+                    <div className="flex flex-row items-center justify-between">
+                      <div>
+                        <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-blue-400/20 text-blue-400 mb-3">
+                          <Briefcase size={20} />
+                        </div>
+
+                        <h3 className="text-xl font-bold text-white">
+                          {exp.company}
+                        </h3>
+                        <p className="text-gray-300 mb-2">
+                          {exp.location} — {exp.position}
+                        </p>
+                        <p className="text-blue-400 font-medium mb-4">
+                          {exp.period}
+                        </p>
+                      </div>
+                      <div
+                        className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-blue-400/20 text-blue-400 mb-3"
+                        onClick={() =>
+                          setShowBulletPoints(
+                            showBulletPoints === exp.company ? "" : exp.company
+                          )
+                        }
+                      >
+                        {showBulletPoints === exp.company ? (
+                          <ChevronUp size={20} />
+                        ) : (
+                          <ChevronDown size={20} />
+                        )}
+                      </div>
                     </div>
 
-                    <h3 className="text-xl font-bold text-white">
-                      {exp.company}
-                    </h3>
-                    <p className="text-gray-300 mb-2">
-                      {exp.location} — {exp.position}
-                    </p>
-                    <p className="text-blue-400 font-medium mb-4">
-                      {exp.period}
-                    </p>
-
-                    <ul className="space-y-2">
-                      {exp.achievements.map((achievement, idx) => (
-                        <li
-                          key={idx}
-                          className="text-gray-300 flex items-start"
-                        >
-                          <span className="mr-2 text-blue-400 mt-1.5">•</span>
-                          <span>{achievement}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    {showBulletPoints === exp.company && (
+                      <ul className="space-y-2">
+                        {exp.achievements.map((achievement, idx) => (
+                          <li
+                            key={idx}
+                            className="text-gray-300 flex items-start"
+                          >
+                            <span className="mr-2 text-blue-400 mt-1.5">•</span>
+                            <span>{achievement}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
               </div>
