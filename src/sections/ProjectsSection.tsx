@@ -12,14 +12,14 @@ const projects = [
       "https://i.postimg.cc/s2TThmKM/Screenshot-2025-05-10-at-3-51-41-PM.png",
   },
   {
-    title: "Resumelyzer",
+    title: "Resumind",
     description:
-      "Resumelyzer is an AI-powered platform that analyzes resumes for formatting, keyword alignment, and ATS compatibility. Built with React and Redux, it offers personalized suggestions to enhance job success. Its modular architecture and test-driven approach ensure performance, scalability, and a seamless user experience for resume improvement.",
+      "Resumind is an AI-powered platform that analyzes resumes for formatting, keyword alignment, and ATS compatibility. Built with React and Redux, it offers personalized suggestions to enhance job success. Its modular architecture and test-driven approach ensure performance, scalability, and a seamless user experience for resume improvement.",
     tech: ["React", "Prime/react", "Gemini", "Node.js"],
-    demoLink: "https://resumelyzer.onrender.com/",
+    demoLink: "https://resumind.in/",
     githubLink: "https://github.com/resumelyzer",
     image:
-      "https://i.postimg.cc/sDf1nJJj/Screenshot-2025-05-10-at-3-51-53-PM.png",
+      "https://i.postimg.cc/nV9Zxnns/Screenshot-2025-05-22-at-8-45-45-AM.png",
   },
   {
     title: "Portfolio",
