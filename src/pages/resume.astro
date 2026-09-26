@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import Footer from '../components/Footer.astro';
+import { person, deployments, education, certifications, toolkit, projects } from '../data/profile';
+const host = (u: string) => new URL(u).hostname.replace(/^www\./, '');
+---
+<Base page="resume" title="Resume" description={`Resume of ${person.name}: ${person.role}, 5+ years across AI voice agents, fintech, ERP and field apps. Delhi, India.`}>
+  <main id="main" class="doc wrap">
+    <header class="doc-head">
+      <div>
+        <p class="mono" style="margin:0;color:var(--steel)">Resume · updated Sep 2026</p>
+        <h1>{person.name}</h1>
+        <p>{person.headline}</p>
+      </div>
+      <div class="doc-actions">
+        <a class="btn" href="/ujjwal-sharma-resume.pdf" download>Download PDF</a>
+        <a class="btn ghost" href="/#contact">Write to me</a>
+      </div>
+    </header>
+    <div class="doc-contact mono">
+      <span>{person.location.city}, India</span>
+      <a href={`mailto:${person.email}`}>{person.email}</a>
+      <a href={person.links.linkedin}>linkedin.com/in/codeujjwal</a>
+      <a href={person.links.github}>github.com/codeujjwal</a>
+      <a href={person.site}>codeujjwal.in</a>
+    </div>
+
+    <section class="doc-sec" aria-labelledby="r-sum">
+      <h2 id="r-sum" class="mono">Summary</h2>
+      <p style="margin:0;max-width:70ch">{person.description} Known for embedding with business teams, finding the work that costs the most time, and shipping production software fast.</p>
+    </section>
+
+    <section class="doc-sec" aria-labelledby="r-exp">
+      <h2 id="r-exp" class="mono">Experience</h2>
+      <div>
+        {deployments.map((d) => (
+          <article class="job">
+            <div class="job-top">
+              <h3>{d.url ? <a href={d.url}>{d.company}</a> : d.company}</h3>
+              <span class="mono">{d.when.replace('→', '–')} · {d.place}</span>
+            </div>
+            <span class="mono">{d.roles.map((r) => `${r.title} (${r.years})`).join(' · ')}</span>
+            <p>{d.brief}</p>
+            <ul>{d.items.map((it) => <li><b>{it.t}:</b> {it.d}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="doc-sec" aria-labelledby="r-skills">
+      <h2 id="r-skills" class="mono">Skills</h2>
+      <ul class="plain">{toolkit.caps.map((c) => <li><b>{c.h}:</b> <span>{c.items.join(', ')}</span></li>)}</ul>
+    </section>
+
+    <section class="doc-sec" aria-labelledby="r-edu">
+      <h2 id="r-edu" class="mono">Education</h2>
+      <ul class="plain">{education.map((e) => <li><b>{e.degree}</b> <span>· {e.school} · {e.years}</span></li>)}</ul>
+    </section>
+
+    <section class="doc-sec" aria-labelledby="r-proj">
+      <h2 id="r-proj" class="mono">Side projects</h2>
+      <ul class="plain">{projects.map((p) => <li>{p.url ? <><b><a href={p.url}>{p.name}</a></b> <span>· {host(p.url)}</span></> : <><b>{p.name}</b> <span>· {p.d}</span></>}</li>)}</ul>
+    </section>
+
+    <section class="doc-sec" aria-labelledby="r-cert">
+      <h2 id="r-cert" class="mono">Certifications</h2>
+      <ul class="plain">{certifications.map((c) => <li>{c}</li>)}</ul>
+    </section>
+  </main>
+  <Footer />
+  <script>
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    import { initCommon, reduce, $$ } from '../scripts/common.ts';
+    initCommon();
+    if (!reduce) {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from('.doc-head > *, .doc-contact > *', { y: 24, opacity: 0, duration: 0.9, ease: 'expo.out', stagger: 0.06 });
+      const els = $$('.doc-sec > h2, .job, .plain li');
+      gsap.set(els, { opacity: 0, y: 24 });
+      ScrollTrigger.batch(els, { start: 'top 94%', once: true, onEnter: (b) => gsap.to(b, { opacity: 1, y: 0, duration: 0.8, ease: 'expo.out', stagger: 0.05, overwrite: true }) });
+    }
+  </script>
+</Base>

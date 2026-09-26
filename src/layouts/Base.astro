@@ -1,0 +1,95 @@
+---
+import '@fontsource-variable/archivo/standard.css';
+import '@fontsource-variable/jetbrains-mono/wght.css';
+import '../styles/site.css';
+import archivo from '@fontsource-variable/archivo/files/archivo-latin-standard-normal.woff2?url';
+import TopBar from '../components/TopBar.astro';
+import { person, deployments, education } from '../data/profile';
+
+interface Props {
+  title?: string;
+  description?: string;
+  page?: 'home' | 'resume' | 'plain';
+  noindex?: boolean;
+}
+const { title, description = person.description, page = 'plain', noindex = false } = Astro.props;
+const site = Astro.site ?? new URL(person.site);
+const canonical = new URL(Astro.url.pathname, site).href;
+const fullTitle = title ? `${title} · ${person.name}` : `${person.name} · ${person.role}`;
+const og = new URL('/og.png', site).href;
+
+const current = deployments.filter((d) => !d.end);
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ProfilePage',
+      '@id': `${site.href}#profile`,
+      url: site.href,
+      name: fullTitle,
+      dateModified: new Date().toISOString().slice(0, 10),
+      mainEntity: { '@id': `${site.href}#person` },
+    },
+    {
+      '@type': 'Person',
+      '@id': `${site.href}#person`,
+      name: person.name,
+      alternateName: person.handle,
+      url: site.href,
+      image: new URL(person.photo, site).href,
+      jobTitle: person.role,
+      description: person.description,
+      email: `mailto:${person.email}`,
+      address: { '@type': 'PostalAddress', addressLocality: person.location.city, addressCountry: person.location.country },
+      worksFor: current.map((d) => ({ '@type': 'Organization', name: d.company, ...(d.url ? { url: d.url } : {}) })),
+      alumniOf: education.map((e) => ({ '@type': 'EducationalOrganization', name: e.school })),
+      knowsAbout: ['AI voice agents', 'Agentic workflows', 'React', 'React Native', 'TypeScript', 'Node.js', 'Fintech', 'ERP'],
+      sameAs: [person.links.linkedin, person.links.github],
+    },
+    { '@type': 'WebSite', '@id': `${site.href}#site`, url: site.href, name: 'codeujjwal', publisher: { '@id': `${site.href}#person` } },
+  ],
+};
+---
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  {noindex && <meta name="robots" content="noindex" />}
+  <meta name="theme-color" content="#E4E5E0" />
+  <meta name="author" content={person.name} />
+  <meta name="google-site-verification" content={person.googleVerification} />
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="codeujjwal" />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={og} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content={`${person.name}, ${person.role}`} />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="profile:first_name" content={person.first} />
+  <meta property="profile:last_name" content={person.last} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={og} />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="sitemap" href="/sitemap.xml" />
+  <link rel="preload" href={archivo} as="font" type="font/woff2" crossorigin />
+  <script is:inline>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />
+</head>
+<body class={page}>
+  <a class="skip" href="#main">Skip to content</a>
+  <TopBar page={page} />
+  <slot />
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="dot"></span><span class="lab"></span></div>
+</body>
+</html>

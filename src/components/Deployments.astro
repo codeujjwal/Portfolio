@@ -1,0 +1,40 @@
+---
+import { deployments } from '../data/profile';
+const host = (u: string) => new URL(u).hostname.replace(/^www\./, '');
+const fmt = (f: { value: number; prefix?: string; suffix?: string }) => `${f.prefix ?? ''}${f.value.toLocaleString('en-IN')}${f.suffix ?? ''}`;
+---
+<section class="block wrap" id="deployments" data-section="Deployments" aria-labelledby="d-h">
+  <div class="kicker mono"><h2 id="d-h">Deployments</h2><span>{deployments.length} sites · latest first</span></div>
+  <div class="deps">
+    {deployments.map((d, i) => (
+      <article class="dep" style={`--i:${i}`} aria-labelledby={`dep-${d.no}`}>
+        <div class="dep-strip mono">
+          <span class="no"><span class="sq" aria-hidden="true"></span>Deployment {d.no}</span>
+          <span>{d.company}</span>
+          <span class="loc">{d.place}{d.coords ? ` · ${d.coords}` : ''}</span>
+          <span class="when">{d.when}</span>
+        </div>
+        <div class="dep-body">
+          <div class="dep-title"><h3 id={`dep-${d.no}`}>{d.company}</h3><p>{d.headline}</p></div>
+          <div class="dep-left">
+            <ul class="roles mono">{d.roles.map((r) => <li><span>{r.title}</span><span>{r.years}</span></li>)}</ul>
+            <p>{d.brief}</p>
+            {d.url && <a class="visit mono" href={d.url} target="_blank" rel="noopener" data-cursor="Visit">{host(d.url)} ↗</a>}
+          </div>
+          <div class="shipped-wrap">
+            <span class="mono">{d.listLabel}</span>
+            <ul class="shipped">{d.items.map((it) => <li><b>{it.t}</b><span>{it.d}</span></li>)}</ul>
+          </div>
+          {d.figs && (
+            <div class="figs">
+              {d.figs.map((f) => (
+                <div class="fig"><b data-count={f.value} data-prefix={f.prefix ?? ''} data-suffix={f.suffix ?? ''}>{fmt(f)}</b><span class="mono">{f.label}</span></div>
+              ))}
+            </div>
+          )}
+        </div>
+        <div class="dep-foot mono"><span>Stack</span><span class="stack">{d.stack.map((s) => <span>{s}</span>)}</span></div>
+      </article>
+    ))}
+  </div>
+</section>

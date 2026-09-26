@@ -1,0 +1,73 @@
+---
+import { desk } from '../data/profile';
+const byId = Object.fromEntries(desk.map((d) => [d.id, d]));
+const label = (id: string) => `${byId[id]?.t ?? id}. Open the story.`;
+const voice = [30, 55, 80, 45, 95, 70, 40, 85, 60, 35, 75, 50, 25, 65, 45, 30];
+const bars = Array.from({ length: 22 }, (_, i) => ({ d: (-(i * 0.137) % 1.1).toFixed(2), u: (0.8 + (i % 5) * 0.12).toFixed(2) }));
+---
+<section class="wb" id="workbench" data-section="Workbench" aria-labelledby="wb-h">
+  <div class="desk mat" id="desk">
+    <div class="diag" aria-hidden="true"></div>
+    <div class="ruler-x" id="rx" aria-hidden="true"></div>
+    <div class="ruler-y" id="ry" aria-hidden="true"></div>
+
+    <div class="desk-copy" id="deskCopy">
+      <span class="mono desk-kick">Workbench · {desk.length} things that shipped</span>
+      <h2 id="wb-h" class="desk-h">Things I've shipped. <span>Pick one up.</span></h2>
+      <p>Every card here went to production. Pick one up, throw it across the mat, or tap it for the story behind it.</p>
+      <span class="hint mono">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M6 9V3.5a1.2 1.2 0 012.4 0V8m0-1.5a1.2 1.2 0 012.4 0V8m0-.8a1.2 1.2 0 012.4 0V11a5 5 0 01-5 5h-.6a4.4 4.4 0 01-3.5-1.8L2.3 11.6a1.2 1.2 0 011.9-1.5L6 12" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="hint-fine">Drag, throw, or tap for the story</span><span class="hint-touch">Hold to pick up, tap for the story</span>
+      </span>
+    </div>
+
+    <div class="objs" id="objs">
+      <button class="obj is-live" type="button" data-id="lemu" style="--w:280px;--h:184px;--rot:-5deg" aria-label={label('lemu')} data-cursor="Pick up">
+        <span class="o-in o-lemu"><span class="t mono"><i></i>Lemu agent · on call</span><span class="wbars">{bars.map((b) => <i style={`animation-delay:${b.d}s;animation-duration:${b.u}s`}></i>)}</span><span class="nm">Lemu AI</span><span class="sub mono">Voice agents · 2026</span></span>
+      </button>
+      <button class="obj is-live" type="button" data-id="spocn" style="--w:292px;--h:178px;--rot:4deg" aria-label={label('spocn')} data-cursor="Pick up">
+        <span class="o-in o-spocn"><span class="sp-b"><span class="sp-top mono"><span>SPOCN · your AI friend</span><span>हिं · EN</span></span><span class="sp-q">Hey, how was today?</span><span class="sp-v">{voice.map((h) => <i style={`height:${h}%`}></i>)}</span></span></span>
+      </button>
+      <button class="obj is-live" type="button" data-id="unspocn" style="--w:240px;--h:198px;--rot:-7deg" aria-label={label('unspocn')} data-cursor="Pick up">
+        <span class="o-in o-uns"><span class="u-top"><b>unspocn</b><span class="mono dim">Report · for two</span></span><span class="u-cols mono"><span>You</span><span>Them</span></span><span class="u-row"><i style="width:82%"></i><i style="width:64%"></i></span><span class="u-row"><i style="width:48%"></i><i style="width:90%"></i></span><span class="u-row hot"><i style="width:70%"></i><i style="width:70%"></i><em class="mono">Not said yet</em></span><span class="u-q">The things you both feel. But haven't said.</span></span>
+      </button>
+      <button class="obj is-live" type="button" data-id="resume" style="--w:180px;--h:240px;--rot:-9deg" aria-label={label('resume')} data-cursor="Pick up">
+        <span class="o-in o-resume"><span class="nm"></span><span class="ln t"></span><span class="ln gap"></span><span class="ln s"></span><span class="ln"></span><span class="ln s"></span><span class="ln t gap"></span><span class="ln"></span><span class="ln s"></span><span class="brand-r">Resumind</span><span class="dial"></span></span>
+      </button>
+      <button class="obj is-live" type="button" data-id="upi" style="--w:172px;--h:236px;--rot:4deg" aria-label={label('upi')} data-cursor="Pick up">
+        <span class="o-in o-upi"><span class="band"><b>Fracto Pay</b><span class="mono">UPI</span></span><span class="qr"><canvas class="qrc" width="25" height="25"></canvas></span><span class="foot-u"><b>Scan to pay</b><span class="mono">UPI · Cards · Net banking</span></span></span>
+      </button>
+      <button class="obj is-live" type="button" data-id="erp" style="--w:280px;--h:150px;--rot:-14deg" aria-label={label('erp')} data-cursor="Pick up">
+        <span class="o-in o-erp"><span class="brand">Asian<br />Footwears<small>ERP · Gurugram</small></span><span class="sticker"><span class="r"><span>Art.</span><b>ERP-2025</b></span><span class="r"><span>Modules</span><b>20+</b></span><span class="r"><span>Users</span><b>Roles, attendance</b></span><span class="barcode"></span></span></span>
+      </button>
+      <button class="obj is-live" type="button" data-id="gold" style="--w:188px;--h:114px;--rot:3deg" aria-label={label('gold')} data-cursor="Pick up">
+        <span class="o-in o-gold"><svg viewBox="0 0 70 40" aria-hidden="true"><path d="M70 20 C 50 0, 30 40, 0 12" fill="none" stroke="#D8C9A0" stroke-width="1.5" /></svg><span class="tag"><span class="k">22K</span><span class="d">1,000+ pieces listed</span><span class="mono">Ruptok · marketplace</span></span></span>
+      </button>
+      <button class="obj is-live" type="button" data-id="receipt" style="--w:168px;--h:236px;--rot:-3deg" aria-label={label('receipt')} data-cursor="Pick up">
+        <span class="o-in o-receipt"><span class="c t">Tashan</span><span class="c">Distributor portal</span><span class="hr"></span><span class="r"><span>Orders</span><span>✓</span></span><span class="r"><span>Transactions</span><span>✓</span></span><span class="r"><span>Schemes</span><span>✓</span></span><span class="r"><span>Tracking</span><span>✓</span></span><span class="hr"></span><span class="r"><span>Web</span><span>Mobile</span></span><span class="hr"></span><span class="c">Asian Footwears · 2025</span><span class="barcode"></span></span>
+      </button>
+      <button class="obj is-live" type="button" data-id="map" style="--w:216px;--h:170px;--rot:16deg" aria-label={label('map')} data-cursor="Pick up">
+        <span class="o-in o-map"><svg viewBox="0 0 216 170" aria-hidden="true"><g stroke="#FFFFFF" stroke-width="7" fill="none"><path d="M-10 40 H230" /><path d="M-10 108 H230" /><path d="M60 -10 V180" /><path d="M150 -10 V180" /><path d="M-10 160 L120 -10" /></g><g stroke="#DADDD2" stroke-width="3" fill="none"><path d="M-10 74 H230" /><path d="M105 -10 V180" /><path d="M190 -10 V180" /></g><path d="M24 108 H60 V40 H150 V74 H190" fill="none" stroke="#16201B" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round" /><circle cx="24" cy="108" r="6" fill="#16201B" /><path d="M190 58c-6.6 0-12 5.2-12 11.6 0 8.7 12 20.4 12 20.4s12-11.7 12-20.4C202 63.2 196.6 58 190 58z" fill="#C4382A" /><circle cx="190" cy="69.5" r="4.2" fill="#fff" /></svg><span class="lab"><b>SalesTrack</b><span class="mono dim">Check-in · GPS</span></span></span>
+      </button>
+      <button class="obj" type="button" data-id="ledger" style="--w:240px;--h:168px;--rot:-20deg" aria-label={label('ledger')} data-cursor="Pick up">
+        <span class="o-in o-ledger"><span class="h mono"><span>Loan register</span><span>Ruptok</span></span><span class="ln">GL-0412 ··· disbursed</span><span class="ln">GL-0413 ··· renewed</span><span class="ln">GL-0414 ··· closed</span><span class="ln">GL-0415 ··· disbursed</span><span class="stamp"><b>₹400 Cr+</b><span>Loans managed</span></span></span>
+      </button>
+    </div>
+
+    <span class="imprint mono" aria-hidden="true">Self-healing · 1 square = 1 cm</span>
+  </div>
+
+  <dialog class="sheet" id="sheet" aria-labelledby="sh-title">
+    <div class="sheet-in">
+      <button class="sheet-x" id="shClose" type="button" aria-label="Close">×</button>
+      <p class="sh-k mono" id="sh-k"></p>
+      <h2 id="sh-title"></h2>
+      <p class="sh-role mono" id="sh-role"></p>
+      <p class="sh-body" id="sh-body"></p>
+      <ul class="sh-did" id="sh-did"></ul>
+      <ul class="sh-stack mono" id="sh-stack"></ul>
+      <a class="btn" id="sh-go" href="#" target="_blank" rel="noopener" hidden>Visit site ↗</a>
+    </div>
+  </dialog>
+  <script type="application/json" id="deskData" set:html={JSON.stringify(desk)} />
+</section>

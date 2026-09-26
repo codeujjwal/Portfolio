@@ -1,0 +1,24 @@
+---
+import { nav, person } from '../data/profile';
+interface Props { page: 'home' | 'resume' | 'plain' }
+const { page } = Astro.props;
+const path = Astro.url.pathname;
+---
+<header class="top" id="topbar">
+  <a class="logo" href="/" id="logo" aria-label={`${person.name}, home`}><span class="sq" aria-hidden="true"></span>{person.name}</a>
+  <nav class="nav mono" aria-label="Main">
+    {nav.map((n) => <a href={n.href} aria-current={path.startsWith('/resume') && n.href === '/resume/' ? 'page' : undefined}>{n.label}</a>)}
+  </nav>
+  <div class="state mono">
+    {page === 'home' && <span class="sec" id="secLabel" aria-hidden="true">§ 01 · Field report</span>}
+    <span class="clock"><span class="ist">--:--</span> IST</span>
+    <button class="menu-btn mono" id="menuBtn" type="button" aria-expanded="false" aria-controls="overlay"><i aria-hidden="true"></i>Menu</button>
+  </div>
+  <span class="progress" id="progress" aria-hidden="true"></span>
+</header>
+<div class="overlay" id="overlay" aria-hidden="true">
+  <nav aria-label="Menu">
+    {nav.map((n, i) => <a href={n.href} tabindex="-1"><span>{n.label}</span><span>0{i + 1}</span></a>)}
+  </nav>
+  <div class="o-foot mono"><span>{person.email}</span><span><span class="ist">--:--</span> IST · {person.location.city}</span></div>
+</div>

@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Transcript from '../components/Transcript.astro';
+import Method from '../components/Method.astro';
+import Deployments from '../components/Deployments.astro';
+import Toolkit from '../components/Toolkit.astro';
+import Workbench from '../components/Workbench.astro';
+import Education from '../components/Education.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+<Base page="home">
+  <main id="main">
+    <Hero />
+    <Transcript />
+    <Method />
+    <Deployments />
+    <Workbench />
+    <Toolkit />
+    <Education />
+    <Contact />
+  </main>
+  <Footer />
+  <script>import '../scripts/home.ts';</script>
+</Base>

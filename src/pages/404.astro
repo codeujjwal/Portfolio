@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Off the map" noindex>
+  <main id="main" class="lost wrap">
+    <p class="mono" style="margin:0;color:var(--steel)" id="lostCoords" data-final="00.0000° N  00.0000° E · Signal lost">00.0000° N  00.0000° E · Signal lost</p>
+    <h1>404</h1>
+    <p>This page isn't on any deployment I've logged. The field report is a click away.</p>
+    <a class="btn" href="/">Back to the field report</a>
+  </main>
+  <script>import { initCommon } from '../scripts/common.ts'; initCommon();</script>
+</Base>

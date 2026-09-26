@@ -1,0 +1,75 @@
+---
+import { person, hero, intro } from '../data/profile';
+const coords = `${person.location.lat}  ${person.location.lng}`;
+const [claimLead, claimEm] = hero.caption.includes('want to use.')
+  ? [hero.caption.replace('want to use.', ''), 'want to use.']
+  : [hero.caption, ''];
+---
+<section class="hero wrap v-badge" id="top" data-section="Field report" aria-labelledby="badgeH">
+  <span class="crop tl" aria-hidden="true"></span><span class="crop tr" aria-hidden="true"></span><span class="crop bl" aria-hidden="true"></span><span class="crop br" aria-hidden="true"></span>
+  <div class="meta-row mono">
+    <span>Field report · 2021 → 2026</span>
+    <span class="scr" data-final={coords}>{coords}</span>
+    <span>Rev. 09 · 2026</span>
+  </div>
+
+  <h1 class="vh" id="name" aria-hidden="true"><span class="ln"><span class="ln-in"><span class="l">X</span></span></span><span class="ln"><span class="ln-in"><span class="l">X</span></span></span></h1>
+
+  <div class="badge-row">
+    <div class="badge-card">
+      <span class="badge-strap" aria-hidden="true"></span>
+      <span class="badge-clip" aria-hidden="true"></span>
+      <div class="id-card">
+        <div class="id-head">
+          <span>Field ID</span>
+          <span class="id-tag">Forward Deployed</span>
+        </div>
+        <span class="id-notch" aria-hidden="true"></span>
+
+        <div class="id-body">
+          <div class="id-photo">
+            <img src={person.photo} width="190" height="236" alt="" loading="eager" decoding="async" fetchpriority="high" />
+            <span class="id-stamp">Deployed</span>
+          </div>
+          <div class="id-fields">
+            <div><span class="id-k mono">Name</span><span class="id-v">{person.first}<br />{person.last}</span></div>
+            <div><span class="id-k mono">Role</span><span class="id-v id-v-sm">{person.role}</span></div>
+            <div><span class="id-k mono">Deployed at</span><span class="id-v id-v-sm">Lemu AI · Asian Footwears</span></div>
+          </div>
+        </div>
+
+        <div class="id-foot mono">
+          <div><span class="id-k">Base</span><span>{person.location.city}, {person.location.country}</span></div>
+          <div><span class="id-k">Since</span><span>{person.since}</span></div>
+          <div><span class="id-k">Clearance</span><span>Prod access</span></div>
+        </div>
+
+        <div class="id-bottom">
+          <span class="id-barcode" aria-hidden="true"></span>
+          <span class="mono id-code">FDE-2106-DL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="badge-copy">
+      <p class="mono badge-label">Purpose of visit</p>
+      <p class="badge-h" id="badgeH">{claimLead}<em>{claimEm}</em></p>
+
+      <div class="cut-actions">
+        <button class="play" id="play" type="button" aria-pressed="false" data-cursor="Listen"
+          data-audio={intro.audio} data-cues={intro.cues} data-lines={JSON.stringify(intro.lines)}>
+          <span class="play-ico" aria-hidden="true"></span><span id="playLabel">Play the 20-second intro</span>
+        </button>
+        <span class="mono play-note">Now building Lemu AI</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scope"><canvas id="wave" aria-hidden="true"></canvas></div>
+
+  <div class="voice-row">
+    <p class="caption" id="caption" aria-live="off">{hero.caption}</p>
+  </div>
+
+  <div class="hair" aria-hidden="true"><div class="hx"></div><div class="hy"></div><div class="readout mono" id="readout">X 0000 · Y 0000</div></div>
+</section>

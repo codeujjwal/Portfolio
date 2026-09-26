@@ -1,0 +1,10 @@
+---
+import { person } from '../data/profile';
+const year = new Date().getFullYear();
+---
+<footer class="foot wrap mono">
+  <span>© {year} {person.name}</span>
+  <span>{person.location.city} · <span class="ist">--:--</span> IST</span>
+  <a href="/resume/">Resume</a>
+  <a href="#top" data-top>Back to top ↑</a>
+</footer>

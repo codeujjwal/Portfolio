@@ -1,0 +1,15 @@
+---
+import { method } from '../data/profile';
+---
+<section class="block wrap" id="method" data-section="Method" aria-labelledby="m-h">
+  <div class="kicker mono"><h2 id="m-h">Method</h2><span>Four stages, every time</span></div>
+  <div class="m-head">
+    <p class="big-h split-lines">How a deployment runs</p>
+    <p class="thesis">{method.thesis}</p>
+  </div>
+  <ol class="steps" id="steps">
+    {method.steps.map((s) => (
+      <li class="step"><span class="n" aria-hidden="true">{s.n}</span><h3>{s.t}</h3><p>{s.d}</p></li>
+    ))}
+  </ol>
+</section>

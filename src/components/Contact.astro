@@ -1,0 +1,67 @@
+---
+import { person, contact } from '../data/profile';
+---
+<section class="contact wrap" id="contact" data-section="Contact" aria-labelledby="ask">
+  <div class="kicker mono"><h2>Contact</h2><span>Replies within a day, IST</span></div>
+  <p class="ask split-lines" id="ask">Got a problem on the <em>ground?</em></p>
+
+  <div class="post-stage">
+    <div class="postcard" id="postcard">
+      <div class="face front">
+        <div class="msg-side">
+          <h3>{contact.heading}</h3>
+          <p>{contact.blurb}</p>
+          <form class="cform" id="contactForm" name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" />
+              <span class="err" id="e-name" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-email">Your email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" />
+              <span class="err" id="e-email" aria-live="polite"></span>
+            </div>
+            <fieldset class="topics">
+              <legend>It's about</legend>
+              {contact.topics.map((t, i) => (
+                <label><input type="radio" name="topic" value={t} checked={i === 0} /><span>{t}</span></label>
+              ))}
+            </fieldset>
+            <div class="field">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" name="message" rows="4" required minlength="10" maxlength="4000"></textarea>
+              <span class="err" id="e-msg" aria-live="polite"></span>
+            </div>
+            <div class="send-row">
+              <div class="send-wrap"><button class="send" id="send" type="submit" data-cursor="Send"><span>Send<br />postcard</span></button></div>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+        <div class="addr-side">
+          <div class="pc-top">
+            <span class="postmark" aria-hidden="true"><span><b>{person.location.city}</b><span class="pm-date">26 SEP 2026</span><br /><span class="pm-time">--:-- IST</span></span></span>
+            <span class="pstamp" aria-hidden="true"><span>₹5<small>India</small></span></span>
+          </div>
+          <div class="to">
+            <div><span class="mono">To</span><span>{person.name}</span></div>
+            <div><span class="addr" id="addr">{person.email}</span><button class="cbtn mono" id="copy" type="button" data-cursor="Copy">Copy</button></div>
+            <a href={person.links.linkedin} target="_blank" rel="noopener"><span>LinkedIn</span><span class="mono">/in/codeujjwal ↗</span></a>
+            <a href={person.links.github} target="_blank" rel="noopener"><span>GitHub</span><span class="mono">@codeujjwal ↗</span></a>
+            <div><span class="mono">From</span><span class="mono">{person.location.city} · {person.location.lat} {person.location.lng}</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="face back" aria-live="polite">
+        <span class="sent-stamp" aria-hidden="true">Sent</span>
+        <span class="mono">Postcard received</span>
+        <h3>Posted.</h3>
+        <p id="sentNote">Thanks. I'll reply within a day.</p>
+        <button class="again mono" id="again" type="button" tabindex="-1">Write another</button>
+      </div>
+    </div>
+  </div>
+</section>

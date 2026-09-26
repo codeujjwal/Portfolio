@@ -1,0 +1,35 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import { education } from '../data/profile';
+
+// Use a university's logo if its file is in public/images/edu/, otherwise show a monogram seal.
+const findLogo = (name: string) => {
+  for (const ext of ['svg', 'png', 'webp', 'jpg']) {
+    const rel = `/images/edu/${name}.${ext}`;
+    if (fs.existsSync(path.join(process.cwd(), 'public', rel))) return rel;
+  }
+  return null;
+};
+const cards = education.map((e, i) => ({ ...e, src: findLogo(e.logo), r: [-1.2, 0.8, -0.5][i] ?? 0 }));
+---
+<section class="block wrap" id="education" data-section="Education" aria-labelledby="e-h">
+  <div class="kicker mono"><h2 id="e-h">Education</h2><span>Three degrees</span></div>
+  <div class="edu-head">
+    <p class="big-h split-lines">Still studying.</p>
+    <p class="note">Three degrees, one of them in progress.</p>
+  </div>
+  <div class="cards" id="cards">
+    {cards.map((e) => (
+      <article class="icard" style={`--r:${e.r}deg`}>
+        <div class="icard-top">
+          <span class="mono">{e.years.includes('In progress') ? <>{e.years.replace(' · In progress', '')} · <b>In progress</b></> : e.years}</span>
+          <span class={`seal${e.src ? ' has-logo' : ''}`} aria-hidden={e.src ? undefined : 'true'}>
+            {e.src ? <img src={e.src} alt={`${e.school} logo`} width="56" height="56" loading="lazy" decoding="async" /> : <span class={`mono-seal len-${e.mono.length}`}>{e.mono}</span>}
+          </span>
+        </div>
+        <div><h3>{e.degree}</h3><p>{e.school}</p></div>
+      </article>
+    ))}
+  </div>
+</section>

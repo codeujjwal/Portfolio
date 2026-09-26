@@ -1,0 +1,22 @@
+---
+import { toolkit } from '../data/profile';
+const reps = (row: string[]) => [...row, ...row, ...row];
+---
+<section class="toolkit" id="toolkit" data-section="Toolkit" aria-labelledby="tk-h">
+  <div class="tk-orange" aria-hidden="true"></div>
+  <div class="tk-panel">
+    <div class="tk-head wrap"><h2 id="tk-h" class="split-lines">Toolkit</h2><p>What comes along on every deployment. The stack changes with the problem.</p></div>
+    <div class="rows" aria-hidden="true">
+      {toolkit.tapes.map((row, i) => (
+        <div class={`tape${i === 1 ? ' hollow' : ''}`} data-dir={i === 1 ? 1 : -1}>
+          {reps(row).map((w) => <span>{w}<i class="sq"></i></span>)}
+        </div>
+      ))}
+    </div>
+    <div class="caps wrap">
+      {toolkit.caps.map((c) => (
+        <div class="cap"><h3 class="mono">{c.h}</h3><ul>{c.items.map((x) => <li>{x}</li>)}</ul></div>
+      ))}
+    </div>
+  </div>
+</section>
