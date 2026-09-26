@@ -13,7 +13,7 @@ const [claimLead, claimEm] = hero.caption.includes('want to use.')
     <span>Rev. 09 · 2026</span>
   </div>
 
-  <h1 class="vh" id="name" aria-hidden="true"><span class="ln"><span class="ln-in"><span class="l">X</span></span></span><span class="ln"><span class="ln-in"><span class="l">X</span></span></span></h1>
+  <h1 class="vh" id="name"><span class="ln">{person.first.split('').map((c) => <span class="ln-in"><span class="l">{c}</span></span>)}</span>{' '}<span class="ln">{person.last.split('').map((c) => <span class="ln-in"><span class="l">{c}</span></span>)}</span></h1>
 
   <div class="badge-row">
     <div class="badge-card">
@@ -28,7 +28,7 @@ const [claimLead, claimEm] = hero.caption.includes('want to use.')
 
         <div class="id-body">
           <div class="id-photo">
-            <img src={person.photo} width="190" height="236" alt="" loading="eager" decoding="async" fetchpriority="high" />
+            <img src={person.photo} width="190" height="236" alt={`${person.name}, ${person.role}`} loading="eager" decoding="async" fetchpriority="high" />
             <span class="id-stamp">Deployed</span>
           </div>
           <div class="id-fields">
@@ -68,7 +68,7 @@ const [claimLead, claimEm] = hero.caption.includes('want to use.')
   <div class="scope"><canvas id="wave" aria-hidden="true"></canvas></div>
 
   <div class="voice-row">
-    <p class="caption" id="caption" aria-live="off">{hero.caption}</p>
+    <p class="caption" id="caption" aria-live="off">{intro.lines[0]}</p>
   </div>
 
   <div class="hair" aria-hidden="true"><div class="hx"></div><div class="hy"></div><div class="readout mono" id="readout">X 0000 · Y 0000</div></div>
