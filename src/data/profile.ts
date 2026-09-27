@@ -69,6 +69,7 @@ export type Deployment = {
   no: string;
   company: string;
   url?: string;
+  linkedin?: string;
   place: string;
   coords?: string;
   when: string;
@@ -88,6 +89,7 @@ export const deployments: Deployment[] = [
     no: '05',
     company: 'Lemu AI',
     url: 'https://lemuai.com',
+    linkedin: 'https://www.linkedin.com/company/lemu-ai/',
     place: 'Delhi',
     coords: '28.6139° N 77.2090° E',
     when: 'Jul 2026 → Now',
@@ -109,6 +111,7 @@ export const deployments: Deployment[] = [
     no: '04',
     company: 'Asian Footwears',
     url: 'https://asianfootwears.com',
+    linkedin: 'https://www.linkedin.com/company/asian-footwear-pvt-ltd',
     place: 'Gurugram',
     coords: '28.4595° N 77.0266° E',
     when: 'Jan 2025 → Now',
@@ -125,7 +128,7 @@ export const deployments: Deployment[] = [
       { t: 'Udyog', d: 'Vendor app on iOS and Android for bidding on material requirements.' },
       { t: 'SalesTrack', d: 'Field sales with GPS tracking, attendance and order management.' },
       { t: 'Tashan', d: 'Distributor portal on mobile and web: orders, transactions, schemes.' },
-      { t: 'ERP + reports', d: 'User and role management, attendance and 20+ features, plus company-wide analytics.' },
+      { t: 'ERP + reports', d: 'Roles, attendance, 20+ features, plus company-wide analytics.' },
     ],
     figs: [
       { value: 20, suffix: '+', label: 'ERP modules' },
@@ -136,6 +139,7 @@ export const deployments: Deployment[] = [
   {
     no: '03',
     company: 'Ruptok Fintech',
+    linkedin: 'https://www.linkedin.com/company/ruptok-fintech',
     place: 'Delhi',
     coords: '28.6139° N 77.2090° E',
     when: 'Oct 2022 → Dec 2024',
@@ -155,13 +159,13 @@ export const deployments: Deployment[] = [
     figs: [
       { value: 400, prefix: '₹', suffix: 'Cr+', label: 'Loans managed' },
       { value: 1000, suffix: '+', label: 'Products listed' },
-      { value: 300, suffix: '+', label: 'Staff on workflows' },
     ],
     stack: ['React', 'Redux', 'TypeScript', 'UPI', 'OCR'],
   },
   {
     no: '02',
     company: 'Squareware',
+    linkedin: 'https://www.linkedin.com/company/thesquareware/',
     place: 'Remote',
     when: 'Nov 2021 → Sep 2022',
     start: '2021-11',
@@ -181,6 +185,8 @@ export const deployments: Deployment[] = [
   {
     no: '01',
     company: 'RedPositive',
+    url: 'https://redpositive.in/',
+    linkedin: 'https://www.linkedin.com/company/redpositive-service-opc-pvt-ltd/',
     place: 'Delhi',
     coords: '28.6139° N 77.2090° E',
     when: 'Jun 2021 → Nov 2021',
@@ -188,26 +194,26 @@ export const deployments: Deployment[] = [
     end: '2021-11',
     headline: 'First deploy.',
     roles: [{ title: 'Frontend Intern', years: '2021' }],
-    brief: 'Six months shipping frontend features to production, debugging live issues and running regression tests.',
+    brief: 'Six months shipping frontend features to production, debugging live issues and running regression tests for client websites and products.',
     listLabel: 'Shipped',
     items: [
-      { t: 'Production features', d: 'Frontend work on live web applications.' },
-      { t: 'Stability', d: 'Debugging and regression testing on every release.' },
+      { t: 'Client websites', d: 'Built and shipped production websites for client businesses.' },
+      { t: 'React Native builds', d: 'Cross-platform mobile products for client teams.' },
     ],
-    stack: ['JavaScript', 'React', 'Git'],
+    stack: ['JavaScript', 'React', 'React Native', 'Git'],
   },
 ];
 
 export const toolkit = {
   tapes: [
-    ['AI agents', 'Voice', 'LLM workflows', 'OCR'],
+    ['AI agents', 'Voice', 'LLM workflows', 'Automations'],
     ['React', 'React Native', 'TypeScript', 'Node'],
     ['ERP', 'Fintech', 'UPI', 'Field apps', 'Reporting'],
   ],
   caps: [
-    { h: 'AI and agents', items: ['Voice agents', 'Agentic workflows', 'LLM apps (Gemini and others)', 'Document OCR'] },
+    { h: 'AI and agents', items: ['Voice agents', 'Agentic workflows', 'AI-assisted dev: Claude Code, Cursor, Windsurf, Codex', 'Fast development & automations across tools'] },
     { h: 'Product engineering', items: ['React, React Native', 'TypeScript, Node.js', 'Redux, MobX', 'iOS and Android releases'] },
-    { h: 'Delivery', items: ['Jest, Cypress, Maestro', 'Performance work', 'API integrations', 'Leading small teams'] },
+    { h: 'Delivery', items: ['Jest, Cypress, Maestro', 'Performance work', 'API integrations', 'Leading teams'] },
   ],
 };
 

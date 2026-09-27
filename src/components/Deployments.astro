@@ -19,7 +19,10 @@ const fmt = (f: { value: number; prefix?: string; suffix?: string }) => `${f.pre
           <div class="dep-left">
             <ul class="roles mono">{d.roles.map((r) => <li><span>{r.title}</span><span>{r.years}</span></li>)}</ul>
             <p>{d.brief}</p>
-            {d.url && <a class="visit mono" href={d.url} target="_blank" rel="noopener" data-cursor="Visit">{host(d.url)} ↗</a>}
+            <div class="visit-row">
+              {d.url && <a class="visit mono" href={d.url} target="_blank" rel="noopener" data-cursor="Visit">{host(d.url)} ↗</a>}
+              {d.linkedin && <a class="visit mono" href={d.linkedin} target="_blank" rel="noopener" data-cursor="LinkedIn">LinkedIn ↗</a>}
+            </div>
           </div>
           <div class="shipped-wrap">
             <span class="mono">{d.listLabel}</span>
