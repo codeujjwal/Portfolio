@@ -175,7 +175,6 @@ button, input, textarea, select { font: inherit; color: inherit; }
 /* ---------- deployments ---------- */
 .deps { position: relative; display: grid; }
 .dep { position: sticky; top: calc(var(--bar) + env(safe-area-inset-top, 0px) + 12px + var(--i) * 12px); min-height: clamp(440px, 66svh, 760px); margin-bottom: 8vh; background: var(--paper); border: 1px solid var(--ink); display: grid; grid-template-rows: auto 1fr auto; transform-origin: center top; will-change: transform; }
-.dep:last-child { margin-bottom: 0; }
 .dep-strip { display: grid; grid-template-columns: auto 1fr 1fr auto; gap: 18px; align-items: center; padding: 12px 18px; border-bottom: 1px solid var(--ink); background: var(--paper); }
 .dep-strip .no { display: flex; align-items: center; gap: 10px; font-weight: 500; color: var(--ink); }
 .dep-strip .sq { transition: transform .7s var(--ease-out); }
