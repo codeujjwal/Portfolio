@@ -64,16 +64,6 @@ export const transcript = [
   { who: 'me', t: '00:31', say: 'Fintech and manufacturing. A lending platform carrying ₹400+ crore in loans, a jewellery marketplace with 1,000+ listings, and the ERP, sales and distributor apps a footwear company runs on.' },
 ] as const;
 
-export const method = {
-  thesis: "Forward deployed engineer. I go where the problem is, work next to the people who have it, and ship until it's solved.",
-  steps: [
-    { n: '01', t: 'Embed', d: 'Sit with the people doing the work, on their floor and in their tools.' },
-    { n: '02', t: 'Find', d: 'Find the task that eats the most hours or costs the most money.' },
-    { n: '03', t: 'Ship', d: 'Prototype in days, put it in real hands, fix what breaks.' },
-    { n: '04', t: 'Hold', d: 'Stay until it runs without me, then hand it over with docs.' },
-  ],
-};
-
 export type Figure = { value: number; prefix?: string; suffix?: string; label: string };
 export type Deployment = {
   no: string;
@@ -289,7 +279,6 @@ export const contact = {
 
 export const nav = [
   { label: 'Work', href: '/#deployments' },
-  { label: 'Method', href: '/#method' },
   { label: 'Education', href: '/#education' },
   { label: 'Resume', href: '/resume/' },
   { label: 'Contact', href: '/#contact' },

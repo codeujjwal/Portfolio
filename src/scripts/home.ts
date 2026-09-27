@@ -152,7 +152,7 @@ function reveals() {
   });
 
   // numbers roll when they arrive
-  $$('.step .n, .dep-strip .no, .dep-strip .loc, .dep-strip .when, .roles li span:last-child, .icard > .mono, .kicker > span, .foot > span').forEach((el) =>
+  $$('.dep-strip .no, .dep-strip .loc, .dep-strip .when, .roles li span:last-child, .icard > .mono, .kicker > span, .foot > span').forEach((el) =>
     ScrollTrigger.create({ trigger: el, start: 'clamp(top 92%)', once: true, onEnter: () => rollDigits(el, 1000) }),
   );
   $$('.who time').forEach((el) => ScrollTrigger.create({ trigger: el, start: 'top 90%', once: true, onEnter: () => countTime(el) }));
@@ -195,12 +195,6 @@ function choreography(voice: { setBase: (w: number) => void }) {
     ScrollTrigger.create({ trigger: turn, start: 'top 70%', end: 'bottom 45%', toggleClass: 'speaking' });
   });
   gsap.from('.avatar', { scale: 0, rotate: -40, duration: 0.9, ease: 'back.out(2.2)', stagger: 0.12, scrollTrigger: { trigger: '.turns', start: 'top 80%', once: true } });
-
-  /* method: the orange line draws, steps follow it */
-  gsap.timeline({ scrollTrigger: { trigger: '#steps', start: 'top 82%', once: true } })
-    .fromTo('#steps', { '--draw': 0 }, { '--draw': 1, duration: 1.4, ease: 'deploy' })
-    .from('.step', { y: 40, opacity: 0, duration: 1, ease: 'land', stagger: 0.12 }, 0.25);
-  gsap.from('.m-head .thesis', { y: 30, opacity: 0, duration: 1, ease: 'land', scrollTrigger: { trigger: '.m-head', start: 'top 82%', once: true } });
 
   /* deployments: each card sinks back as the next one lands on it */
   const cards = $$('.dep');
